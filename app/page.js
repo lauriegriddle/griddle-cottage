@@ -301,17 +301,38 @@ export default function LetterGriddleCottage() {
     }
   }, [allComplete, completionTime, startTime, stats, isReplay]);
 
-  // Music control
-  useEffect(() => {
-    if (!audioRef.current || !hasMounted) return;
-    if (musicEnabled && season.tracks.length > 0) {
-      audioRef.current.src = season.tracks[currentTrack]?.file || '';
-      audioRef.current.volume = volume;
-      audioRef.current.play().catch(() => {});
-    } else {
-      audioRef.current.pause();
+  // Music control - only change src when track changes
+const lastTrackRef = useRef(null);
+
+useEffect(() => {
+  if (!audioRef.current || !hasMounted) return;
+  
+  if (musicEnabled && season.tracks.length > 0) {
+    const trackFile = season.tracks[currentTrack]?.file || '';
+    
+    // Only set src if track actually changed
+    if (lastTrackRef.current !== trackFile) {
+      audioRef.current.src = trackFile;
+      lastTrackRef.current = trackFile;
     }
-  }, [musicEnabled, currentTrack, volume, hasMounted, season.tracks]);
+    
+    audioRef.current.volume = volume;
+    
+    // Only play if paused
+    if (audioRef.current.paused) {
+      audioRef.current.play().catch(() => {});
+    }
+  } else {
+    audioRef.current.pause();
+  }
+}, [musicEnabled, currentTrack, hasMounted, season.tracks]);
+
+// Separate effect for volume only
+useEffect(() => {
+  if (audioRef.current) {
+    audioRef.current.volume = volume;
+  }
+}, [volume]);
 
   // Keyboard
   useEffect(() => {
