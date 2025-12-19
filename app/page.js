@@ -539,7 +539,7 @@ ${puzzleData.category}
 ${'🥇'.repeat(completedWords.filter(c => c).length)}
 ${completedWords.filter(c => c).length}/5 words${isReplay ? ' (Replay)' : ''}
 
-Play at lettergriddle cottage.com`;
+Play at lettergriddlecottage.com`;
 
     navigator.clipboard.writeText(text).then(() => {
       setShareCopied(true);
@@ -1010,7 +1010,7 @@ ${puzzleData.category}
 ${'🥇'.repeat(completedWords.filter(c => c).length)}
 ${completedWords.filter(c => c).length}/5 words${isReplay ? ' (Replay)' : ''}
 
-Play at lettergriddle cottage.com`}</pre>
+Play at lettergriddlecottage.com`}</pre>
             </div>
             <button
               onClick={handleShare}
