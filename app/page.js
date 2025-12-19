@@ -785,8 +785,8 @@ Play at lettergriddle cottage.com`;
                 <div className="flex items-center justify-between mb-1.5">
                   <div className="flex items-center gap-1.5">
                     <span className="text-lg">❄️</span>
-                    <span className={`text-xs font-bold ${season.text}`}>{wordData.word.length} Letters</span>
-                    {isComplete && <span>✅</span>}
+<span className={`text-xs font-bold ${season.text}`}>{wordData.word.length} Letters</span>
+{isComplete && <span>🥇</span>}
                   </div>
                   <button
                     onClick={(e) => { e.stopPropagation(); toggleHint(wordIdx); }}
@@ -829,6 +829,21 @@ Play at lettergriddle cottage.com`;
                 </div>
 
                 {/* Letter Griddle */}
+                {isComplete && (
+  <p className={`text-center text-sm ${season.text} mt-2`}>
+    {['Perfect landing! 🎿', 'Gold medal form! 🥇', 'Flawless! ⛸️', 'Champion move! 🏆', 'Stunning! ✨'][wordIdx]}
+  </p>
+)}
+
+<audio 
+  ref={audioRef} 
+  preload="none"
+  onEnded={() => {
+    const nextTrack = (currentTrack + 1) % season.tracks.length;
+    setCurrentTrack(nextTrack);
+    localStorage.setItem('cottageMusicTrack', nextTrack.toString());
+  }}
+/>
                 {!isComplete && (
                   <div className="bg-black/20 rounded-lg p-2">
                     <div className="flex items-center justify-between mb-1.5">
