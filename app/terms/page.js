@@ -23,6 +23,11 @@ export default function Terms() {
             </section>
 
             <section>
+            <h2 className="text-xl font-semibold text-white mb-2">Fictional Content</h2>
+            <p className="text-slate-300">Letter Griddle, including the Letter Griddle Cafe, the town of Griddle Falls, the Trivia Crew characters, and all related stories, vignettes, and recipes, is a work of fiction. All characters, locations, and events are products of the creator's imagination. Any resemblance to actual persons, living or dead, businesses, events, or locales is entirely coincidental.</p>
+          </section>
+
+            <section>
               <h2 className="text-xl font-semibold text-white mb-2">User Conduct</h2>
               <p className="text-slate-300">When sharing your results or interacting with our community, please be kind and respectful to others. We're all here to have fun!</p>
             </section>
@@ -47,7 +52,7 @@ export default function Terms() {
               <p className="text-slate-300">Questions about these terms? Reach out to us at lettergriddle@gmail.com</p>
             </section>
 
-            <p className="text-slate-400 text-sm mt-8">Last updated: December 2025</p>
+            <p className="text-slate-400 text-sm mt-8">Last updated: January 14, 2026</p>
           </div>
 
           <div className="mt-8 text-center">
