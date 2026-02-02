@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Shuffle, HelpCircle, BarChart3, Share2, Music, Volume2, VolumeX, Calendar, Instagram } from 'lucide-react';
+import { X, Shuffle, HelpCircle, BarChart3, Share2, Music, Volume2, VolumeX, Calendar, Instagram, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function LetterGriddleCottage() {
   // ============================================
@@ -110,18 +110,246 @@ export default function LetterGriddleCottage() {
   const season = seasons[currentSeason];
 
   // ============================================
-  // PUZZLE DATA
+  // ALL 17 WINTER OLYMPICS PUZZLES
   // ============================================
-  const puzzleData = {
-    category: "Figure Skating",
-    puzzleNumber: 1,
-    words: [
-      { word: "SPIN", hint: "Rotating move on one foot", letters: ['S', 'P', 'I', 'N', 'E'], revealedIndex: 0 },
-      { word: "AXEL", hint: "Jump named after Norwegian skater Axel Paulsen", letters: ['A', 'X', 'E', 'L', 'S'], revealedIndex: 1 },
-      { word: "BLADE", hint: "Metal edge of the skate that glides on ice", letters: ['B', 'L', 'A', 'D', 'E', 'R'], revealedIndex: 0 },
-      { word: "COSTUME", hint: "Sparkly outfit worn during competition", letters: ['C', 'O', 'S', 'T', 'U', 'M', 'E', 'N'], revealedIndex: 3 },
-      { word: "CHAMPION", hint: "Gold medal winner standing on the podium", letters: ['C', 'H', 'A', 'M', 'P', 'I', 'O', 'N', 'S', 'E'], revealedIndex: 4 },
-    ],
+  const allPuzzles = [
+    {
+      puzzleNumber: 1,
+      date: "2026-02-06",
+      category: "Opening Ceremonies",
+      funFact: "Did you know? The 2026 Winter Olympics in Italy will do something new. Instead of one Olympic flame, there will be multiple cauldrons lit in different locations!",
+      words: [
+        { word: "SHOW", hint: "A big event you watch, like the Opening Ceremony", revealedIndex: 2 },
+        { word: "TORCH", hint: "Flame carried by runners before the Games begin", revealedIndex: 3 },
+        { word: "SPORTS", hint: "Games like skiing, skating, and hockey", revealedIndex: 2 },
+        { word: "COMPETE", hint: "What athletes do to try to win", revealedIndex: 4 },
+        { word: "STADIUM", hint: "Big building where fans watch the events", revealedIndex: 3 },
+      ],
+    },
+    {
+      puzzleNumber: 2,
+      date: "2026-02-07",
+      category: "Winter Olympics Locations",
+      funFact: "The use of a physical podium for medal ceremonies was first introduced at the 1932 Winter Olympics in Lake Placid. Prior to this, medals were typically handed out during the closing ceremony.",
+      words: [
+        { word: "RINK", hint: "Flat ice surface for skating", revealedIndex: 2 },
+        { word: "TRAIL", hint: "Path through the snow for skiing", revealedIndex: 3 },
+        { word: "SLOPE", hint: "Side of a mountain for skiing down", revealedIndex: 1 },
+        { word: "PODIUM", hint: "Platform where medal winners stand", revealedIndex: 2 },
+        { word: "BACKCOUNTRY", hint: "Remote wilderness area away from resorts", revealedIndex: 4 },
+      ],
+    },
+    {
+      puzzleNumber: 3,
+      date: "2026-02-08",
+      category: "Alpine Skiing",
+      funFact: "Alpine skiing is one of the fastest non-motorized sports, with world speed records exceeding 158 mph! The word 'ski' comes from the Old Norse word for 'split piece of wood.'",
+      words: [
+        { word: "FAST", hint: "Moving with great speed", revealedIndex: 2 },
+        { word: "MOGUL", hint: "Bumps on a ski slope", revealedIndex: 2 },
+        { word: "SLALOM", hint: "Zigzag race around poles", revealedIndex: 3 },
+        { word: "CARVING", hint: "Making clean turns on skis", revealedIndex: 4 },
+        { word: "SNOWPLOW", hint: "Beginner's way to slow down with skis in a V", revealedIndex: 4 },
+      ],
+    },
+    {
+      puzzleNumber: 4,
+      date: "2026-02-09",
+      category: "Tina and Milo",
+      funFact: "Tina and Milo are stoats, small animals that change color with the seasons! They're brown and white in summer but turn completely white in winter.",
+      words: [
+        { word: "MILAN", hint: "Italian city hosting the 2026 Winter Games", revealedIndex: 3 },
+        { word: "STOATS", hint: "Small furry animals that turn white in winter", revealedIndex: 2 },
+        { word: "MASCOTS", hint: "Tina and Milo are the official ones for 2026", revealedIndex: 4 },
+        { word: "CORTINA", hint: "Mountain town in Italy co-hosting the Olympics", revealedIndex: 5 },
+        { word: "SIBLINGS", hint: "Brothers and sisters, like Tina and Milo!", revealedIndex: 3 },
+      ],
+    },
+    {
+      puzzleNumber: 5,
+      date: "2026-02-10",
+      category: "Cross-Country Skiing",
+      funFact: "Norway leads all countries in total Winter Olympic medals, with Marit Bjørgen, cross-country skier, being the most decorated Winter Olympian ever with 15 medals!",
+      words: [
+        { word: "LANE", hint: "Marked path for racing", revealedIndex: 2 },
+        { word: "TRAIL", hint: "Path through the snow", revealedIndex: 1 },
+        { word: "TERRAIN", hint: "The ground and its features", revealedIndex: 4 },
+        { word: "NORDIC", hint: "Style of skiing from Scandinavia", revealedIndex: 3 },
+        { word: "BACKCOUNTRY", hint: "Remote area away from groomed trails", revealedIndex: 6 },
+      ],
+    },
+    {
+      puzzleNumber: 6,
+      date: "2026-02-11",
+      category: "Curling",
+      funFact: "Curling is called 'chess on ice' because teams must plan ahead and work together to get their stones closest to the target!",
+      words: [
+        { word: "SWEEP", hint: "Brush the ice to control the stone", revealedIndex: 3 },
+        { word: "SLIDE", hint: "Glide smoothly on the ice", revealedIndex: 2 },
+        { word: "STONES", hint: "Heavy granite discs used in the game", revealedIndex: 4 },
+        { word: "GRANITE", hint: "Type of rock the stones are made from", revealedIndex: 3 },
+        { word: "THROWING", hint: "Releasing the stone down the ice", revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 7,
+      date: "2026-02-12",
+      category: "Figure Skating",
+      funFact: "Figure skating is the oldest Winter Olympic sport, debuting in the 1908 Summer Games! It features incredible feats like Midori Ito's first triple Axel and Surya Bonaly's famous backflips.",
+      words: [
+        { word: "SPIN", hint: "Rotating move on one foot", revealedIndex: 2 },
+        { word: "SPIRAL", hint: "Gliding on one foot with leg extended behind", revealedIndex: 3 },
+        { word: "SHADOW", hint: "Two skaters moving in perfect sync", revealedIndex: 4 },
+        { word: "JUMPING", hint: "Leaping into the air", revealedIndex: 3 },
+        { word: "FOOTWORK", hint: "Intricate steps performed on the ice", revealedIndex: 4 },
+      ],
+    },
+    {
+      puzzleNumber: 8,
+      date: "2026-02-13",
+      category: "Freestyle Skiing",
+      funFact: "Freestyle skiing, once called 'hotdogging,' started in the 1960s for freedom of expression and became an Olympic demonstration sport in 1988.",
+      words: [
+        { word: "JIB", hint: "Sliding on rails or boxes", revealedIndex: 1 },
+        { word: "RAIL", hint: "Metal bar to slide on", revealedIndex: 2 },
+        { word: "AERIAL", hint: "Acrobatic jump with flips and twists", revealedIndex: 3 },
+        { word: "BOOTER", hint: "A large jump built for big air", revealedIndex: 3 },
+        { word: "HALFPIPE", hint: "U-shaped snow channel for tricks", revealedIndex: 4 },
+      ],
+    },
+    {
+      puzzleNumber: 9,
+      date: "2026-02-14",
+      category: "Ice Hockey",
+      funFact: "Hockey started as a field game with a ball before transitioning to ice, where a puck slides better. The first recorded indoor game in 1875 in Montreal used natural ice and candles for light!",
+      words: [
+        { word: "PAD", hint: "Protective gear for goalies", revealedIndex: 1 },
+        { word: "PUCK", hint: "Rubber disc hit with a stick", revealedIndex: 2 },
+        { word: "STICK", hint: "Used to hit the puck", revealedIndex: 3 },
+        { word: "SKATES", hint: "Boots with blades for the ice", revealedIndex: 2 },
+        { word: "HELMET", hint: "Protects your head", revealedIndex: 3 },
+      ],
+    },
+    {
+      puzzleNumber: 10,
+      date: "2026-02-15",
+      category: "Luge",
+      funFact: "Luge emerged as a sport in the Swiss Alps in the 1880s, with the first international race in Davos in 1883. It became an Olympic sport in 1964.",
+      words: [
+        { word: "SLED", hint: "Vehicle for sliding down the track", revealedIndex: 2 },
+        { word: "SPIKE", hint: "Sharp points on gloves for the start", revealedIndex: 3 },
+        { word: "HELMET", hint: "Head protection at high speeds", revealedIndex: 4 },
+        { word: "BOOTIES", hint: "Aerodynamic foot coverings", revealedIndex: 3 },
+        { word: "TOBOGGAN", hint: "Another name for a long sled", revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 11,
+      date: "2026-02-16",
+      category: "Nordic Combined",
+      funFact: "The first recorded Nordic Combined competition was in Norway in 1888, combining ski jumping and a long cross-country ski race.",
+      words: [
+        { word: "RACE", hint: "Competition to be the fastest", revealedIndex: 2 },
+        { word: "JUMP", hint: "Leap off a ski ramp", revealedIndex: 2 },
+        { word: "COUNTRY", hint: "Cross-_____ skiing", revealedIndex: 4 },
+        { word: "STRENGTH", hint: "Physical power needed for this sport", revealedIndex: 5 },
+        { word: "ENDURANCE", hint: "Ability to keep going for a long time", revealedIndex: 3 },
+      ],
+    },
+    {
+      puzzleNumber: 12,
+      date: "2026-02-17",
+      category: "Short-Track Speed Skating",
+      funFact: "Skaters win by their skate crossing the line, detected by ankle chips. They use curved blades to navigate tight corners, often with hands touching ice for balance!",
+      words: [
+        { word: "BURN", hint: "Feeling in your legs after racing hard", revealedIndex: 2 },
+        { word: "RELAY", hint: "Team race where skaters tag each other", revealedIndex: 3 },
+        { word: "BLOCK", hint: "Getting in another skater's way", revealedIndex: 2 },
+        { word: "CORNER", hint: "Curved part of the track", revealedIndex: 4 },
+        { word: "CHAOTIC", hint: "Wild and unpredictable action", revealedIndex: 3 },
+      ],
+    },
+    {
+      puzzleNumber: 13,
+      date: "2026-02-18",
+      category: "Skeleton",
+      funFact: "Skeleton athletes race headfirst on small sleds at speeds over 80 mph! The sport is named for early metal sleds that resembled skeletons.",
+      words: [
+        { word: "PUSH", hint: "Sprint at the start to gain speed", revealedIndex: 2 },
+        { word: "SLIDE", hint: "Glide down the icy track", revealedIndex: 3 },
+        { word: "RUNNER", hint: "Metal blade on the bottom of the sled", revealedIndex: 3 },
+        { word: "GRAVITY", hint: "Force that pulls you down the track", revealedIndex: 4 },
+        { word: "DESCENT", hint: "Going down from top to bottom", revealedIndex: 3 },
+      ],
+    },
+    {
+      puzzleNumber: 14,
+      date: "2026-02-19",
+      category: "Ski Jumping",
+      funFact: "Ski jumping combines distance with style points. A single jump lasts under 30 seconds, but athletes can fly hundreds of feet through the air!",
+      words: [
+        { word: "AIR", hint: "What jumpers soar through", revealedIndex: 1 },
+        { word: "FORM", hint: "Body position during flight", revealedIndex: 2 },
+        { word: "FLIGHT", hint: "Traveling through the air", revealedIndex: 3 },
+        { word: "LANDING", hint: "Touching down on the snow", revealedIndex: 4 },
+        { word: "DISTANCE", hint: "How far you jumped", revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 15,
+      date: "2026-02-20",
+      category: "Ski Mountaineering",
+      funFact: "Skimo is brand new to the 2026 Milan Cortina Olympics! It features fast-paced sprint races combining uphill skinning, running in boots, and downhill skiing.",
+      words: [
+        { word: "GEAR", hint: "Equipment needed for the sport", revealedIndex: 2 },
+        { word: "SKIMO", hint: "Nickname for ski mountaineering", revealedIndex: 3 },
+        { word: "ASCENT", hint: "Climbing up the mountain", revealedIndex: 3 },
+        { word: "HARNESS", hint: "Safety straps worn around the body", revealedIndex: 4 },
+        { word: "CLIMBING", hint: "Going up steep terrain", revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 16,
+      date: "2026-02-21",
+      category: "Snowboard",
+      funFact: "Unlike most sports, snowboarding jumped straight to the Olympics in Nagano 1998 with Giant Slalom and Halfpipe, skipping the usual demonstration stage!",
+      words: [
+        { word: "CORK", hint: "Off-axis spinning trick", revealedIndex: 2 },
+        { word: "COURSE", hint: "Path down the mountain with features", revealedIndex: 3 },
+        { word: "SWITCH", hint: "Riding backwards from your normal stance", revealedIndex: 4 },
+        { word: "MCTWIST", hint: "Inverted 540 spin trick", revealedIndex: 3 },
+        { word: "HALFPIPE", hint: "U-shaped snow channel for tricks", revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 17,
+      date: "2026-02-22",
+      category: "Closing Ceremony",
+      funFact: "Closing ceremonies feature the symbolic handover to the next host city. In Vancouver 2010, Canada playfully 'fixed' a cauldron malfunction from the opening ceremony!",
+      words: [
+        { word: "HOST", hint: "Country or city putting on the Games", revealedIndex: 2 },
+        { word: "VENUE", hint: "Location where events take place", revealedIndex: 3 },
+        { word: "ANTHEM", hint: "National song played for winners", revealedIndex: 3 },
+        { word: "PARADE", hint: "Athletes walking together in celebration", revealedIndex: 4 },
+        { word: "VICTORY", hint: "Winning and success", revealedIndex: 4 },
+      ],
+    },
+  ];
+
+  // ============================================
+  // PUZZLE SELECTION (Testing Mode)
+  // ============================================
+  const [currentPuzzleIndex, setCurrentPuzzleIndex] = useState(0);
+  const [showPuzzleSelector, setShowPuzzleSelector] = useState(false);
+  
+  const puzzleData = allPuzzles[currentPuzzleIndex];
+
+  const goToPreviousPuzzle = () => {
+    setCurrentPuzzleIndex(prev => prev > 0 ? prev - 1 : allPuzzles.length - 1);
+  };
+
+  const goToNextPuzzle = () => {
+    setCurrentPuzzleIndex(prev => prev < allPuzzles.length - 1 ? prev + 1 : 0);
   };
 
   // ============================================
@@ -139,9 +367,10 @@ export default function LetterGriddleCottage() {
 
   const initializeAvailable = () => {
     return puzzleData.words.map(w => {
+      const letters = w.word.split('');
       const revealedLetter = w.word[w.revealedIndex];
       let found = false;
-      return w.letters.filter(l => {
+      return letters.filter(l => {
         if (l === revealedLetter && !found) { found = true; return false; }
         return true;
       });
@@ -161,12 +390,10 @@ export default function LetterGriddleCottage() {
   const [crossedOut, setCrossedOut] = useState([[], [], [], [], []]);
   const [focusedWordIdx, setFocusedWordIdx] = useState(0);
 
-  // Timer & Completion
   const [startTime, setStartTime] = useState(() => Date.now());
   const [completionTime, setCompletionTime] = useState(null);
   const [showConfetti, setShowConfetti] = useState(false);
 
-  // Modals
   const [showHowToPlay, setShowHowToPlay] = useState(false);
   const [showStats, setShowStats] = useState(false);
   const [showShare, setShowShare] = useState(false);
@@ -174,13 +401,11 @@ export default function LetterGriddleCottage() {
   const [showSeasonInfo, setShowSeasonInfo] = useState(false);
   const [shareCopied, setShareCopied] = useState(false);
 
-  // Music
   const [musicEnabled, setMusicEnabled] = useState(false);
   const [currentTrack, setCurrentTrack] = useState(0);
   const [volume, setVolume] = useState(0.5);
   const audioRef = useRef(null);
 
-  // Stats
   const [stats, setStats] = useState({
     puzzlesCompleted: 0,
     currentStreak: 0,
@@ -189,7 +414,6 @@ export default function LetterGriddleCottage() {
     lastPlayedDate: null,
   });
 
-  // Replay tracking
   const [todayCompleted, setTodayCompleted] = useState(false);
   const [isReplay, setIsReplay] = useState(false);
 
@@ -199,16 +423,31 @@ export default function LetterGriddleCottage() {
   // EFFECTS
   // ============================================
 
+  // Reset when switching puzzles
+  useEffect(() => {
+    if (hasMounted) {
+      setSelectedLetters(initializeWords());
+      setAvailableLetters(initializeAvailable());
+      setCompletedWords([false, false, false, false, false]);
+      setCrossedOut([[], [], [], [], []]);
+      setHintsRevealed([false, false, false, false, false]);
+      setWrongPlacements({});
+      setCompletionTime(null);
+      setStartTime(Date.now());
+      setFocusedWordIdx(0);
+      setIsReplay(false);
+      setTodayCompleted(false);
+    }
+  }, [currentPuzzleIndex]);
+
   useEffect(() => {
     setHasMounted(true);
 
-    // Load stats
     try {
       const saved = localStorage.getItem('cottageStats');
       if (saved) setStats(JSON.parse(saved));
     } catch (e) {}
 
-    // Check completion
     try {
       const comp = localStorage.getItem('cottageCompletion');
       if (comp) {
@@ -221,7 +460,6 @@ export default function LetterGriddleCottage() {
       }
     } catch (e) {}
 
-    // Load progress
     try {
       const prog = localStorage.getItem('cottageProgress');
       if (prog) {
@@ -237,7 +475,6 @@ export default function LetterGriddleCottage() {
       }
     } catch (e) {}
 
-    // Load music prefs
     try {
       const m = localStorage.getItem('cottageMusicEnabled');
       if (m === 'true') setMusicEnabled(true);
@@ -248,7 +485,6 @@ export default function LetterGriddleCottage() {
     } catch (e) {}
   }, []);
 
-  // Save progress
   useEffect(() => {
     if (!hasMounted || allComplete) return;
     const prog = {
@@ -265,7 +501,6 @@ export default function LetterGriddleCottage() {
     } catch (e) {}
   }, [selectedLetters, availableLetters, completedWords, crossedOut, hintsRevealed, hasMounted, allComplete, startTime]);
 
-  // Completion
   useEffect(() => {
     if (allComplete && !completionTime) {
       const time = Math.floor((Date.now() - startTime) / 1000);
@@ -301,43 +536,38 @@ export default function LetterGriddleCottage() {
     }
   }, [allComplete, completionTime, startTime, stats, isReplay]);
 
-  // Music control - only change src when track changes
-const lastTrackRef = useRef(null);
+  const lastTrackRef = useRef(null);
 
-useEffect(() => {
-  if (!audioRef.current || !hasMounted) return;
-  
-  if (musicEnabled && season.tracks.length > 0) {
-    const trackFile = season.tracks[currentTrack]?.file || '';
+  useEffect(() => {
+    if (!audioRef.current || !hasMounted) return;
     
-    // Only set src if track actually changed
-    if (lastTrackRef.current !== trackFile) {
-      audioRef.current.src = trackFile;
-      lastTrackRef.current = trackFile;
+    if (musicEnabled && season.tracks.length > 0) {
+      const trackFile = season.tracks[currentTrack]?.file || '';
+      
+      if (lastTrackRef.current !== trackFile) {
+        audioRef.current.src = trackFile;
+        lastTrackRef.current = trackFile;
+      }
+      
+      audioRef.current.volume = volume;
+      
+      if (audioRef.current.paused) {
+        audioRef.current.play().catch(() => {});
+      }
+    } else {
+      audioRef.current.pause();
     }
-    
-    audioRef.current.volume = volume;
-    
-    // Only play if paused
-    if (audioRef.current.paused) {
-      audioRef.current.play().catch(() => {});
+  }, [musicEnabled, currentTrack, hasMounted, season.tracks]);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = volume;
     }
-  } else {
-    audioRef.current.pause();
-  }
-}, [musicEnabled, currentTrack, hasMounted, season.tracks]);
+  }, [volume]);
 
-// Separate effect for volume only
-useEffect(() => {
-  if (audioRef.current) {
-    audioRef.current.volume = volume;
-  }
-}, [volume]);
-
-  // Keyboard
   useEffect(() => {
     const handleKey = (e) => {
-      if (showHowToPlay || showStats || showShare || showJukebox || showSeasonInfo || allComplete) return;
+      if (showHowToPlay || showStats || showShare || showJukebox || showSeasonInfo || showPuzzleSelector || allComplete) return;
 
       const key = e.key.toUpperCase();
 
@@ -385,7 +615,7 @@ useEffect(() => {
 
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [availableLetters, selectedLetters, focusedWordIdx, completedWords, allComplete, showHowToPlay, showStats, showShare, showJukebox, showSeasonInfo]);
+  }, [availableLetters, selectedLetters, focusedWordIdx, completedWords, allComplete, showHowToPlay, showStats, showShare, showJukebox, showSeasonInfo, showPuzzleSelector]);
 
   // ============================================
   // GAME FUNCTIONS
@@ -575,7 +805,7 @@ Play at lettergriddlecottage.com`;
 
   return (
     <div className={`min-h-screen bg-gradient-to-br ${season.gradient} p-3 relative overflow-hidden transition-all duration-700`}>
-      {/* Twinkling Orbs Background */}
+      {/* Twinkling Orbs */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <div
@@ -594,7 +824,7 @@ Play at lettergriddlecottage.com`;
         ))}
       </div>
 
-      {/* Floating Ambient Elements */}
+      {/* Ambient Elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         {season.ambient.map((emoji, i) => (
           <div
@@ -612,7 +842,7 @@ Play at lettergriddlecottage.com`;
         ))}
       </div>
 
-      {/* Flickering Fireplace */}
+      {/* Fireplace */}
       {currentSeason === 'winter' && (
         <div className="fixed bottom-4 left-4 pointer-events-none z-10">
           <div className="relative">
@@ -642,29 +872,22 @@ Play at lettergriddlecottage.com`;
         </div>
       )}
 
-      <audio ref={audioRef} loop preload="none" />
+      <audio 
+        ref={audioRef} 
+        preload="none"
+        onEnded={() => {
+          const nextTrack = (currentTrack + 1) % season.tracks.length;
+          setCurrentTrack(nextTrack);
+          localStorage.setItem('cottageMusicTrack', nextTrack.toString());
+        }}
+      />
 
       <style>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0) rotate(0deg); }
-          50% { transform: translateY(-15px) rotate(3deg); }
-        }
-        @keyframes fall {
-          to { transform: translateY(100vh) rotate(360deg); opacity: 0; }
-        }
-        @keyframes shake {
-          0%, 100% { transform: translateX(0); }
-          25% { transform: translateX(-4px); }
-          75% { transform: translateX(4px); }
-        }
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.2; transform: scale(1); }
-          50% { opacity: 0.8; transform: scale(1.3); }
-        }
-        @keyframes fireFlicker {
-          0% { transform: scale(1) rotate(-2deg); opacity: 0.9; }
-          100% { transform: scale(1.1) rotate(2deg); opacity: 1; }
-        }
+        @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-15px) rotate(3deg); } }
+        @keyframes fall { to { transform: translateY(100vh) rotate(360deg); opacity: 0; } }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+        @keyframes twinkle { 0%, 100% { opacity: 0.2; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.3); } }
+        @keyframes fireFlicker { 0% { transform: scale(1) rotate(-2deg); opacity: 0.9; } 100% { transform: scale(1.1) rotate(2deg); opacity: 1; } }
         .shake { animation: shake 0.4s ease-in-out; }
       `}</style>
 
@@ -716,6 +939,22 @@ Play at lettergriddlecottage.com`;
           ))}
         </div>
 
+        {/* 🧪 Testing Mode Puzzle Selector */}
+        <div className={`bg-amber-500/20 border border-amber-400/50 rounded-xl p-2 mb-3`}>
+          <div className="flex items-center justify-center gap-2">
+            <span className={`text-xs ${season.text}`}>🧪 Testing Mode:</span>
+            <button onClick={goToPreviousPuzzle} className={`p-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text}`}>
+              <ChevronLeft size={16} />
+            </button>
+            <button onClick={() => setShowPuzzleSelector(true)} className={`px-3 py-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text} text-xs font-semibold`}>
+              Puzzle {puzzleData.puzzleNumber}/17
+            </button>
+            <button onClick={goToNextPuzzle} className={`p-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text}`}>
+              <ChevronRight size={16} />
+            </button>
+          </div>
+        </div>
+
         {/* Category Banner */}
         <div className={`bg-gradient-to-r ${season.accent} text-white rounded-xl p-2 mb-3 shadow-lg text-center`}>
           <p className="text-xs opacity-80">Puzzle #{puzzleData.puzzleNumber} • {season.eventTitle}</p>
@@ -729,7 +968,7 @@ Play at lettergriddlecottage.com`;
           </div>
         )}
 
-        {/* Progress Save Notice */}
+        {/* Progress Notice */}
         {!allComplete && (
           <div className={`text-center text-xs ${season.textMuted} mb-3`}>
             ✨ Progress saves automatically!
@@ -737,15 +976,20 @@ Play at lettergriddlecottage.com`;
           </div>
         )}
 
-        {/* Completion Banner */}
+        {/* Completion Banner with Fun Fact */}
         {allComplete && (
           <div className={`bg-gradient-to-r ${season.cardBg} backdrop-blur rounded-xl p-4 mb-3 text-center border ${season.border} shadow-xl`}>
             <p className={`text-xl font-bold ${season.text} mb-1`}>❄️ Cottage Complete! ❄️</p>
-            <p className={`${season.textMuted} text-sm mb-2`}>
-              {'🥇'.repeat(5)}
-            </p>
+            <p className={`${season.textMuted} text-sm mb-2`}>{'🥇'.repeat(5)}</p>
             <p className={`${season.textMuted} text-sm mb-2`}>5/5 words</p>
             {isReplay && <p className={`text-xs ${season.textMuted} mb-2`}>(Replay)</p>}
+            
+            {/* Fun Fact */}
+            <div className={`bg-white/10 rounded-lg p-3 mb-3 text-left`}>
+              <p className={`text-xs font-bold ${season.text} mb-1`}>💡 Did you know?</p>
+              <p className={`text-sm ${season.text}`}>{puzzleData.funFact}</p>
+            </div>
+            
             <div className="flex justify-center gap-2">
               <button onClick={() => setShowShare(true)} className={`px-4 py-2 rounded-full bg-gradient-to-r ${season.accent} text-white font-semibold text-sm flex items-center gap-1`}>
                 ❄️ Share
@@ -785,8 +1029,8 @@ Play at lettergriddlecottage.com`;
                 <div className="flex items-center justify-between mb-1.5">
                   <div className="flex items-center gap-1.5">
                     <span className="text-lg">❄️</span>
-<span className={`text-xs font-bold ${season.text}`}>{wordData.word.length} Letters</span>
-{isComplete && <span>🥇</span>}
+                    <span className={`text-xs font-bold ${season.text}`}>{wordData.word.length} Letters</span>
+                    {isComplete && <span>🥇</span>}
                   </div>
                   <button
                     onClick={(e) => { e.stopPropagation(); toggleHint(wordIdx); }}
@@ -828,22 +1072,14 @@ Play at lettergriddlecottage.com`;
                   })}
                 </div>
 
-                {/* Letter Griddle */}
+                {/* Completion Message */}
                 {isComplete && (
-  <p className={`text-center text-sm ${season.text} mt-2`}>
-    {['Perfect landing! 🎿', 'Gold medal form! 🥇', 'Flawless! ⛸️', 'Champion move! 🏆', 'Stunning! ✨'][wordIdx]}
-  </p>
-)}
+                  <p className={`text-center text-sm ${season.text} mt-2`}>
+                    {['Perfect landing! 🎿', 'Gold medal form! 🥇', 'Flawless! ⛸️', 'Champion move! 🏆', 'Stunning! ✨'][wordIdx]}
+                  </p>
+                )}
 
-<audio 
-  ref={audioRef} 
-  preload="none"
-  onEnded={() => {
-    const nextTrack = (currentTrack + 1) % season.tracks.length;
-    setCurrentTrack(nextTrack);
-    localStorage.setItem('cottageMusicTrack', nextTrack.toString());
-  }}
-/>
+                {/* Letter Griddle */}
                 {!isComplete && (
                   <div className="bg-black/20 rounded-lg p-2">
                     <div className="flex items-center justify-between mb-1.5">
@@ -923,6 +1159,36 @@ Play at lettergriddlecottage.com`;
       {/* MODALS */}
       {/* ============================================ */}
 
+      {/* Puzzle Selector Modal */}
+      {showPuzzleSelector && (
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4" onClick={() => setShowPuzzleSelector(false)}>
+          <div className={`bg-gradient-to-br ${season.gradient} rounded-2xl p-5 max-w-md w-full border ${season.border} max-h-[90vh] overflow-y-auto`} onClick={e => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className={`text-lg font-bold ${season.text}`}>🧪 Select Puzzle (Testing)</h2>
+              <button onClick={() => setShowPuzzleSelector(false)} className={`${season.text} hover:opacity-70`}><X size={24} /></button>
+            </div>
+            <div className="grid grid-cols-1 gap-2">
+              {allPuzzles.map((puzzle, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => { setCurrentPuzzleIndex(idx); setShowPuzzleSelector(false); }}
+                  className={`p-3 rounded-lg text-left transition-all ${
+                    currentPuzzleIndex === idx 
+                      ? `bg-gradient-to-r ${season.accent} text-white` 
+                      : `bg-white/10 ${season.text} hover:bg-white/20`
+                  }`}
+                >
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold">#{puzzle.puzzleNumber}: {puzzle.category}</span>
+                    <span className="text-xs opacity-70">{puzzle.date}</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* How to Play */}
       {showHowToPlay && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4" onClick={() => setShowHowToPlay(false)}>
@@ -933,8 +1199,8 @@ Play at lettergriddlecottage.com`;
             </div>
             <div className={`space-y-3 ${season.text} text-sm`}>
               <div className="bg-white/10 rounded-lg p-3">
-                <p className="font-bold mb-1">🥞 Welcome to the Letter Griddle Cottage!</p>
-                <p>Each word has its OWN letter griddle with 1-2 <strong>decoy letters</strong> that don't belong.</p>
+                <p className="font-bold mb-1">🥞 Welcome to Letter Griddle Cottage!</p>
+                <p>Unscramble the letters in each word's griddle to solve all 5 words.</p>
               </div>
               <div className="bg-white/10 rounded-lg p-3">
                 <p className="font-bold mb-1">❄️ How to Play</p>
@@ -942,7 +1208,7 @@ Play at lettergriddlecottage.com`;
                   <li>Click a letter, then click an empty slot</li>
                   <li>OR click a slot first, then click a letter</li>
                   <li>Click placed letters to remove them</li>
-                  <li>Hover + click <span className="bg-rose-500 px-1 rounded">×</span> to cross out suspected decoys</li>
+                  <li>One letter is revealed to help you start</li>
                 </ul>
               </div>
               <div className="bg-white/10 rounded-lg p-3">
@@ -956,7 +1222,7 @@ Play at lettergriddlecottage.com`;
               </div>
               <div className="bg-white/10 rounded-lg p-3">
                 <p className="font-bold mb-1">💾 Save & Replay</p>
-                <p className="text-xs">Progress saves automatically! Replay puzzles for fun - only first solve counts for stats.</p>
+                <p className="text-xs">Progress saves automatically! Replay puzzles for fun.</p>
               </div>
             </div>
           </div>
@@ -1012,10 +1278,7 @@ ${completedWords.filter(c => c).length}/5 words${isReplay ? ' (Replay)' : ''}
 
 Play at lettergriddlecottage.com`}</pre>
             </div>
-            <button
-              onClick={handleShare}
-              className={`w-full py-3 rounded-full bg-gradient-to-r ${season.accent} text-white font-bold`}
-            >
+            <button onClick={handleShare} className={`w-full py-3 rounded-full bg-gradient-to-r ${season.accent} text-white font-bold`}>
               {shareCopied ? '✓ Copied!' : '❄️ Copy to Clipboard'}
             </button>
           </div>
