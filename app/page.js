@@ -119,11 +119,11 @@ export default function LetterGriddleCottage() {
       category: "Opening Ceremonies",
       funFact: "Did you know? The 2026 Winter Olympics in Italy will do something new. Instead of one Olympic flame, there will be multiple cauldrons lit in different locations!",
       words: [
-        { word: "SHOW", hint: "A big event you watch, like the Opening Ceremony", revealedIndex: 2 },
-        { word: "TORCH", hint: "Flame carried by runners before the Games begin", revealedIndex: 3 },
-        { word: "SPORTS", hint: "Games like skiing, skating, and hockey", revealedIndex: 2 },
-        { word: "COMPETE", hint: "What athletes do to try to win", revealedIndex: 4 },
-        { word: "STADIUM", hint: "Big building where fans watch the events", revealedIndex: 3 },
+        { word: "SHOW", hint: "A big event you watch, like the Opening Ceremony", letters: ['S', 'H', 'O', 'W', 'N', 'E'], revealedIndex: 2 },
+        { word: "TORCH", hint: "Flame carried by runners before the Games begin", letters: ['T', 'O', 'R', 'C', 'H', 'E', 'S'], revealedIndex: 3 },
+        { word: "SPORTS", hint: "Games like skiing, skating, and hockey", letters: ['S', 'P', 'O', 'R', 'T', 'S', 'E'], revealedIndex: 2 },
+        { word: "COMPETE", hint: "What athletes do to try to win", letters: ['C', 'O', 'M', 'P', 'E', 'T', 'E', 'R', 'S'], revealedIndex: 4 },
+        { word: "STADIUM", hint: "Big building where fans watch the events", letters: ['S', 'T', 'A', 'D', 'I', 'U', 'M', 'N', 'E'], revealedIndex: 3 },
       ],
     },
     {
@@ -132,11 +132,11 @@ export default function LetterGriddleCottage() {
       category: "Winter Olympics Locations",
       funFact: "The use of a physical podium for medal ceremonies was first introduced at the 1932 Winter Olympics in Lake Placid. Prior to this, medals were typically handed out during the closing ceremony.",
       words: [
-        { word: "RINK", hint: "Flat ice surface for skating", revealedIndex: 2 },
-        { word: "TRAIL", hint: "Path through the snow for skiing", revealedIndex: 3 },
-        { word: "SLOPE", hint: "Side of a mountain for skiing down", revealedIndex: 1 },
-        { word: "PODIUM", hint: "Platform where medal winners stand", revealedIndex: 2 },
-        { word: "BACKCOUNTRY", hint: "Remote wilderness area away from resorts", revealedIndex: 4 },
+        { word: "RINK", hint: "Flat ice surface for skating", letters: ['R', 'I', 'N', 'K', 'S', 'E'], revealedIndex: 2 },
+        { word: "TRAIL", hint: "Path through the snow for skiing", letters: ['T', 'R', 'A', 'I', 'L', 'S', 'E'], revealedIndex: 3 },
+        { word: "SLOPE", hint: "Side of a mountain for skiing down", letters: ['S', 'L', 'O', 'P', 'E', 'W', 'S'], revealedIndex: 1 },
+        { word: "PODIUM", hint: "Platform where medal winners stand", letters: ['P', 'O', 'D', 'I', 'U', 'M', 'S', 'E'], revealedIndex: 2 },
+        { word: "OUTDOORS", hint: "Where all Winter Olympic events take place", letters: ['O', 'U', 'T', 'D', 'O', 'O', 'R', 'S', 'E', 'N'], revealedIndex: 4 },
       ],
     },
     {
@@ -145,11 +145,11 @@ export default function LetterGriddleCottage() {
       category: "Alpine Skiing",
       funFact: "Alpine skiing is one of the fastest non-motorized sports, with world speed records exceeding 158 mph! The word 'ski' comes from the Old Norse word for 'split piece of wood.'",
       words: [
-        { word: "FAST", hint: "Moving with great speed", revealedIndex: 2 },
-        { word: "MOGUL", hint: "Bumps on a ski slope", revealedIndex: 2 },
-        { word: "SLALOM", hint: "Zigzag race around poles", revealedIndex: 3 },
-        { word: "CARVING", hint: "Making clean turns on skis", revealedIndex: 4 },
-        { word: "SNOWPLOW", hint: "Beginner's way to slow down with skis in a V", revealedIndex: 4 },
+        { word: "FAST", hint: "Moving with great speed", letters: ['F', 'A', 'S', 'T', 'E', 'R'], revealedIndex: 2 },
+        { word: "MOGUL", hint: "Bumps on a ski slope", letters: ['M', 'O', 'G', 'U', 'L', 'S', 'E'], revealedIndex: 2 },
+        { word: "SLALOM", hint: "Zigzag race around poles", letters: ['S', 'L', 'A', 'L', 'O', 'M', 'E', 'N'], revealedIndex: 3 },
+        { word: "CARVING", hint: "Making clean turns on skis", letters: ['C', 'A', 'R', 'V', 'I', 'N', 'G', 'E', 'S'], revealedIndex: 4 },
+        { word: "SNOWPLOW", hint: "Beginner's way to slow down with skis in a V", letters: ['S', 'N', 'O', 'W', 'P', 'L', 'O', 'W', 'E', 'R'], revealedIndex: 4 },
       ],
     },
     {
@@ -158,11 +158,11 @@ export default function LetterGriddleCottage() {
       category: "Tina and Milo",
       funFact: "Tina and Milo are stoats, small animals that change color with the seasons! They're brown and white in summer but turn completely white in winter.",
       words: [
-        { word: "MILAN", hint: "Italian city hosting the 2026 Winter Games", revealedIndex: 3 },
-        { word: "STOATS", hint: "Small furry animals that turn white in winter", revealedIndex: 2 },
-        { word: "MASCOTS", hint: "Tina and Milo are the official ones for 2026", revealedIndex: 4 },
-        { word: "CORTINA", hint: "Mountain town in Italy co-hosting the Olympics", revealedIndex: 5 },
-        { word: "SIBLINGS", hint: "Brothers and sisters, like Tina and Milo!", revealedIndex: 3 },
+        { word: "MILAN", hint: "Italian city hosting the 2026 Winter Games", letters: ['M', 'I', 'L', 'A', 'N', 'O', 'E'], revealedIndex: 3 },
+        { word: "STOATS", hint: "Small furry animals that turn white in winter", letters: ['S', 'T', 'O', 'A', 'T', 'S', 'E', 'R'], revealedIndex: 2 },
+        { word: "MASCOTS", hint: "Tina and Milo are the official ones for 2026", letters: ['M', 'A', 'S', 'C', 'O', 'T', 'S', 'E', 'R'], revealedIndex: 4 },
+        { word: "CORTINA", hint: "Mountain town in Italy co-hosting the Olympics", letters: ['C', 'O', 'R', 'T', 'I', 'N', 'A', 'S', 'E'], revealedIndex: 5 },
+        { word: "SIBLINGS", hint: "Brothers and sisters, like Tina and Milo!", letters: ['S', 'I', 'B', 'L', 'I', 'N', 'G', 'S', 'E', 'R'], revealedIndex: 3 },
       ],
     },
     {
@@ -171,11 +171,11 @@ export default function LetterGriddleCottage() {
       category: "Cross-Country Skiing",
       funFact: "Norway leads all countries in total Winter Olympic medals, with Marit Bjørgen, cross-country skier, being the most decorated Winter Olympian ever with 15 medals!",
       words: [
-        { word: "LANE", hint: "Marked path for racing", revealedIndex: 2 },
-        { word: "TRAIL", hint: "Path through the snow", revealedIndex: 1 },
-        { word: "TERRAIN", hint: "The ground and its features", revealedIndex: 4 },
-        { word: "NORDIC", hint: "Style of skiing from Scandinavia", revealedIndex: 3 },
-        { word: "BACKCOUNTRY", hint: "Remote area away from groomed trails", revealedIndex: 6 },
+        { word: "LANE", hint: "Marked path for racing", letters: ['L', 'A', 'N', 'E', 'S', 'R'], revealedIndex: 2 },
+        { word: "TRAIL", hint: "Path through the snow", letters: ['T', 'R', 'A', 'I', 'L', 'S', 'E'], revealedIndex: 1 },
+        { word: "TERRAIN", hint: "The ground and its features", letters: ['T', 'E', 'R', 'R', 'A', 'I', 'N', 'S', 'O'], revealedIndex: 4 },
+        { word: "NORDIC", hint: "Style of skiing from Scandinavia", letters: ['N', 'O', 'R', 'D', 'I', 'C', 'E', 'S'], revealedIndex: 3 },
+        { word: "ENDURANCE", hint: "Ability to keep going for a long time", letters: ['E', 'N', 'D', 'U', 'R', 'A', 'N', 'C', 'E', 'S', 'T'], revealedIndex: 3 },
       ],
     },
     {
@@ -184,11 +184,11 @@ export default function LetterGriddleCottage() {
       category: "Curling",
       funFact: "Curling is called 'chess on ice' because teams must plan ahead and work together to get their stones closest to the target!",
       words: [
-        { word: "SWEEP", hint: "Brush the ice to control the stone", revealedIndex: 3 },
-        { word: "SLIDE", hint: "Glide smoothly on the ice", revealedIndex: 2 },
-        { word: "STONES", hint: "Heavy granite discs used in the game", revealedIndex: 4 },
-        { word: "GRANITE", hint: "Type of rock the stones are made from", revealedIndex: 3 },
-        { word: "THROWING", hint: "Releasing the stone down the ice", revealedIndex: 5 },
+        { word: "SWEEP", hint: "Brush the ice to control the stone", letters: ['S', 'W', 'E', 'E', 'P', 'T', 'R'], revealedIndex: 3 },
+        { word: "SLIDE", hint: "Glide smoothly on the ice", letters: ['S', 'L', 'I', 'D', 'E', 'R', 'S'], revealedIndex: 2 },
+        { word: "STONES", hint: "Heavy granite discs used in the game", letters: ['S', 'T', 'O', 'N', 'E', 'S', 'R', 'I'], revealedIndex: 4 },
+        { word: "GRANITE", hint: "Type of rock the stones are made from", letters: ['G', 'R', 'A', 'N', 'I', 'T', 'E', 'S', 'O'], revealedIndex: 3 },
+        { word: "THROWING", hint: "Releasing the stone down the ice", letters: ['T', 'H', 'R', 'O', 'W', 'I', 'N', 'G', 'S', 'E'], revealedIndex: 5 },
       ],
     },
     {
@@ -197,11 +197,11 @@ export default function LetterGriddleCottage() {
       category: "Figure Skating",
       funFact: "Figure skating is the oldest Winter Olympic sport, debuting in the 1908 Summer Games! It features incredible feats like Midori Ito's first triple Axel and Surya Bonaly's famous backflips.",
       words: [
-        { word: "SPIN", hint: "Rotating move on one foot", revealedIndex: 2 },
-        { word: "SPIRAL", hint: "Gliding on one foot with leg extended behind", revealedIndex: 3 },
-        { word: "SHADOW", hint: "Two skaters moving in perfect sync", revealedIndex: 4 },
-        { word: "JUMPING", hint: "Leaping into the air", revealedIndex: 3 },
-        { word: "FOOTWORK", hint: "Intricate steps performed on the ice", revealedIndex: 4 },
+        { word: "SPIN", hint: "Rotating move on one foot", letters: ['S', 'P', 'I', 'N', 'E', 'T'], revealedIndex: 2 },
+        { word: "SPIRAL", hint: "Gliding on one foot with leg extended behind", letters: ['S', 'P', 'I', 'R', 'A', 'L', 'E', 'S'], revealedIndex: 3 },
+        { word: "SHADOW", hint: "Two skaters moving in perfect sync", letters: ['S', 'H', 'A', 'D', 'O', 'W', 'S', 'E'], revealedIndex: 4 },
+        { word: "JUMPING", hint: "Leaping into the air", letters: ['J', 'U', 'M', 'P', 'I', 'N', 'G', 'S', 'E'], revealedIndex: 3 },
+        { word: "FOOTWORK", hint: "Intricate steps performed on the ice", letters: ['F', 'O', 'O', 'T', 'W', 'O', 'R', 'K', 'S', 'E'], revealedIndex: 4 },
       ],
     },
     {
@@ -210,11 +210,11 @@ export default function LetterGriddleCottage() {
       category: "Freestyle Skiing",
       funFact: "Freestyle skiing, once called 'hotdogging,' started in the 1960s for freedom of expression and became an Olympic demonstration sport in 1988.",
       words: [
-        { word: "JIB", hint: "Sliding on rails or boxes", revealedIndex: 1 },
-        { word: "RAIL", hint: "Metal bar to slide on", revealedIndex: 2 },
-        { word: "AERIAL", hint: "Acrobatic jump with flips and twists", revealedIndex: 3 },
-        { word: "BOOTER", hint: "A large jump built for big air", revealedIndex: 3 },
-        { word: "HALFPIPE", hint: "U-shaped snow channel for tricks", revealedIndex: 4 },
+        { word: "JIB", hint: "Sliding on rails or boxes", letters: ['J', 'I', 'B', 'S', 'E'], revealedIndex: 1 },
+        { word: "RAIL", hint: "Metal bar to slide on", letters: ['R', 'A', 'I', 'L', 'S', 'E'], revealedIndex: 2 },
+        { word: "AERIAL", hint: "Acrobatic jump with flips and twists", letters: ['A', 'E', 'R', 'I', 'A', 'L', 'S', 'T'], revealedIndex: 3 },
+        { word: "BOOTER", hint: "A large jump built for big air", letters: ['B', 'O', 'O', 'T', 'E', 'R', 'S', 'N'], revealedIndex: 3 },
+        { word: "HALFPIPE", hint: "U-shaped snow channel for tricks", letters: ['H', 'A', 'L', 'F', 'P', 'I', 'P', 'E', 'S', 'R'], revealedIndex: 4 },
       ],
     },
     {
@@ -223,11 +223,11 @@ export default function LetterGriddleCottage() {
       category: "Ice Hockey",
       funFact: "Hockey started as a field game with a ball before transitioning to ice, where a puck slides better. The first recorded indoor game in 1875 in Montreal used natural ice and candles for light!",
       words: [
-        { word: "PAD", hint: "Protective gear for goalies", revealedIndex: 1 },
-        { word: "PUCK", hint: "Rubber disc hit with a stick", revealedIndex: 2 },
-        { word: "STICK", hint: "Used to hit the puck", revealedIndex: 3 },
-        { word: "SKATES", hint: "Boots with blades for the ice", revealedIndex: 2 },
-        { word: "HELMET", hint: "Protects your head", revealedIndex: 3 },
+        { word: "PAD", hint: "Protective gear for goalies", letters: ['P', 'A', 'D', 'S', 'E'], revealedIndex: 1 },
+        { word: "PUCK", hint: "Rubber disc hit with a stick", letters: ['P', 'U', 'C', 'K', 'S', 'E'], revealedIndex: 2 },
+        { word: "STICK", hint: "Used to hit the puck", letters: ['S', 'T', 'I', 'C', 'K', 'E', 'R'], revealedIndex: 3 },
+        { word: "SKATES", hint: "Boots with blades for the ice", letters: ['S', 'K', 'A', 'T', 'E', 'S', 'R', 'I'], revealedIndex: 2 },
+        { word: "HELMET", hint: "Protects your head", letters: ['H', 'E', 'L', 'M', 'E', 'T', 'S', 'R'], revealedIndex: 3 },
       ],
     },
     {
@@ -236,11 +236,11 @@ export default function LetterGriddleCottage() {
       category: "Luge",
       funFact: "Luge emerged as a sport in the Swiss Alps in the 1880s, with the first international race in Davos in 1883. It became an Olympic sport in 1964.",
       words: [
-        { word: "SLED", hint: "Vehicle for sliding down the track", revealedIndex: 2 },
-        { word: "SPIKE", hint: "Sharp points on gloves for the start", revealedIndex: 3 },
-        { word: "HELMET", hint: "Head protection at high speeds", revealedIndex: 4 },
-        { word: "BOOTIES", hint: "Aerodynamic foot coverings", revealedIndex: 3 },
-        { word: "TOBOGGAN", hint: "Another name for a long sled", revealedIndex: 5 },
+        { word: "SLED", hint: "Vehicle for sliding down the track", letters: ['S', 'L', 'E', 'D', 'S', 'I'], revealedIndex: 2 },
+        { word: "SPIKE", hint: "Sharp points on gloves for the start", letters: ['S', 'P', 'I', 'K', 'E', 'S', 'R'], revealedIndex: 3 },
+        { word: "HELMET", hint: "Head protection at high speeds", letters: ['H', 'E', 'L', 'M', 'E', 'T', 'S', 'R'], revealedIndex: 4 },
+        { word: "BOOTIES", hint: "Aerodynamic foot coverings", letters: ['B', 'O', 'O', 'T', 'I', 'E', 'S', 'R', 'N'], revealedIndex: 3 },
+        { word: "TOBOGGAN", hint: "Another name for a long sled", letters: ['T', 'O', 'B', 'O', 'G', 'G', 'A', 'N', 'S', 'E'], revealedIndex: 5 },
       ],
     },
     {
@@ -249,11 +249,11 @@ export default function LetterGriddleCottage() {
       category: "Nordic Combined",
       funFact: "The first recorded Nordic Combined competition was in Norway in 1888, combining ski jumping and a long cross-country ski race.",
       words: [
-        { word: "RACE", hint: "Competition to be the fastest", revealedIndex: 2 },
-        { word: "JUMP", hint: "Leap off a ski ramp", revealedIndex: 2 },
-        { word: "COUNTRY", hint: "Cross-_____ skiing", revealedIndex: 4 },
-        { word: "STRENGTH", hint: "Physical power needed for this sport", revealedIndex: 5 },
-        { word: "ENDURANCE", hint: "Ability to keep going for a long time", revealedIndex: 3 },
+        { word: "RACE", hint: "Competition to be the fastest", letters: ['R', 'A', 'C', 'E', 'S', 'R'], revealedIndex: 2 },
+        { word: "JUMP", hint: "Leap off a ski ramp", letters: ['J', 'U', 'M', 'P', 'S', 'E'], revealedIndex: 2 },
+        { word: "COUNTRY", hint: "Cross-_____ skiing", letters: ['C', 'O', 'U', 'N', 'T', 'R', 'Y', 'S', 'E'], revealedIndex: 4 },
+        { word: "STRENGTH", hint: "Physical power needed for this sport", letters: ['S', 'T', 'R', 'E', 'N', 'G', 'T', 'H', 'S', 'I'], revealedIndex: 5 },
+        { word: "ENDURANCE", hint: "Ability to keep going for a long time", letters: ['E', 'N', 'D', 'U', 'R', 'A', 'N', 'C', 'E', 'S', 'T'], revealedIndex: 3 },
       ],
     },
     {
@@ -262,11 +262,11 @@ export default function LetterGriddleCottage() {
       category: "Short-Track Speed Skating",
       funFact: "Skaters win by their skate crossing the line, detected by ankle chips. They use curved blades to navigate tight corners, often with hands touching ice for balance!",
       words: [
-        { word: "BURN", hint: "Feeling in your legs after racing hard", revealedIndex: 2 },
-        { word: "RELAY", hint: "Team race where skaters tag each other", revealedIndex: 3 },
-        { word: "BLOCK", hint: "Getting in another skater's way", revealedIndex: 2 },
-        { word: "CORNER", hint: "Curved part of the track", revealedIndex: 4 },
-        { word: "CHAOTIC", hint: "Wild and unpredictable action", revealedIndex: 3 },
+        { word: "BURN", hint: "Feeling in your legs after racing hard", letters: ['B', 'U', 'R', 'N', 'S', 'E'], revealedIndex: 2 },
+        { word: "RELAY", hint: "Team race where skaters tag each other", letters: ['R', 'E', 'L', 'A', 'Y', 'S', 'T'], revealedIndex: 3 },
+        { word: "BLOCK", hint: "Getting in another skater's way", letters: ['B', 'L', 'O', 'C', 'K', 'S', 'E'], revealedIndex: 2 },
+        { word: "CORNER", hint: "Curved part of the track", letters: ['C', 'O', 'R', 'N', 'E', 'R', 'S', 'T'], revealedIndex: 4 },
+        { word: "CHAOTIC", hint: "Wild and unpredictable action", letters: ['C', 'H', 'A', 'O', 'T', 'I', 'C', 'S', 'E'], revealedIndex: 3 },
       ],
     },
     {
@@ -275,11 +275,11 @@ export default function LetterGriddleCottage() {
       category: "Skeleton",
       funFact: "Skeleton athletes race headfirst on small sleds at speeds over 80 mph! The sport is named for early metal sleds that resembled skeletons.",
       words: [
-        { word: "PUSH", hint: "Sprint at the start to gain speed", revealedIndex: 2 },
-        { word: "SLIDE", hint: "Glide down the icy track", revealedIndex: 3 },
-        { word: "RUNNER", hint: "Metal blade on the bottom of the sled", revealedIndex: 3 },
-        { word: "GRAVITY", hint: "Force that pulls you down the track", revealedIndex: 4 },
-        { word: "DESCENT", hint: "Going down from top to bottom", revealedIndex: 3 },
+        { word: "PUSH", hint: "Sprint at the start to gain speed", letters: ['P', 'U', 'S', 'H', 'E', 'R'], revealedIndex: 2 },
+        { word: "SLIDE", hint: "Glide down the icy track", letters: ['S', 'L', 'I', 'D', 'E', 'R', 'S'], revealedIndex: 3 },
+        { word: "RUNNER", hint: "Metal blade on the bottom of the sled", letters: ['R', 'U', 'N', 'N', 'E', 'R', 'S', 'T'], revealedIndex: 3 },
+        { word: "GRAVITY", hint: "Force that pulls you down the track", letters: ['G', 'R', 'A', 'V', 'I', 'T', 'Y', 'S', 'E'], revealedIndex: 4 },
+        { word: "DESCENT", hint: "Going down from top to bottom", letters: ['D', 'E', 'S', 'C', 'E', 'N', 'T', 'R', 'I'], revealedIndex: 3 },
       ],
     },
     {
@@ -288,11 +288,11 @@ export default function LetterGriddleCottage() {
       category: "Ski Jumping",
       funFact: "Ski jumping combines distance with style points. A single jump lasts under 30 seconds, but athletes can fly hundreds of feet through the air!",
       words: [
-        { word: "AIR", hint: "What jumpers soar through", revealedIndex: 1 },
-        { word: "FORM", hint: "Body position during flight", revealedIndex: 2 },
-        { word: "FLIGHT", hint: "Traveling through the air", revealedIndex: 3 },
-        { word: "LANDING", hint: "Touching down on the snow", revealedIndex: 4 },
-        { word: "DISTANCE", hint: "How far you jumped", revealedIndex: 5 },
+        { word: "AIR", hint: "What jumpers soar through", letters: ['A', 'I', 'R', 'S', 'E'], revealedIndex: 1 },
+        { word: "FORM", hint: "Body position during flight", letters: ['F', 'O', 'R', 'M', 'S', 'E'], revealedIndex: 2 },
+        { word: "FLIGHT", hint: "Traveling through the air", letters: ['F', 'L', 'I', 'G', 'H', 'T', 'S', 'E'], revealedIndex: 3 },
+        { word: "LANDING", hint: "Touching down on the snow", letters: ['L', 'A', 'N', 'D', 'I', 'N', 'G', 'S', 'E'], revealedIndex: 4 },
+        { word: "DISTANCE", hint: "How far you jumped", letters: ['D', 'I', 'S', 'T', 'A', 'N', 'C', 'E', 'R', 'S'], revealedIndex: 5 },
       ],
     },
     {
@@ -301,11 +301,11 @@ export default function LetterGriddleCottage() {
       category: "Ski Mountaineering",
       funFact: "Skimo is brand new to the 2026 Milan Cortina Olympics! It features fast-paced sprint races combining uphill skinning, running in boots, and downhill skiing.",
       words: [
-        { word: "GEAR", hint: "Equipment needed for the sport", revealedIndex: 2 },
-        { word: "SKIMO", hint: "Nickname for ski mountaineering", revealedIndex: 3 },
-        { word: "ASCENT", hint: "Climbing up the mountain", revealedIndex: 3 },
-        { word: "HARNESS", hint: "Safety straps worn around the body", revealedIndex: 4 },
-        { word: "CLIMBING", hint: "Going up steep terrain", revealedIndex: 5 },
+        { word: "GEAR", hint: "Equipment needed for the sport", letters: ['G', 'E', 'A', 'R', 'S', 'T'], revealedIndex: 2 },
+        { word: "SKIMO", hint: "Nickname for ski mountaineering", letters: ['S', 'K', 'I', 'M', 'O', 'N', 'E'], revealedIndex: 3 },
+        { word: "ASCENT", hint: "Climbing up the mountain", letters: ['A', 'S', 'C', 'E', 'N', 'T', 'R', 'I'], revealedIndex: 3 },
+        { word: "HARNESS", hint: "Safety straps worn around the body", letters: ['H', 'A', 'R', 'N', 'E', 'S', 'S', 'T', 'I'], revealedIndex: 4 },
+        { word: "CLIMBING", hint: "Going up steep terrain", letters: ['C', 'L', 'I', 'M', 'B', 'I', 'N', 'G', 'S', 'E'], revealedIndex: 5 },
       ],
     },
     {
@@ -314,11 +314,11 @@ export default function LetterGriddleCottage() {
       category: "Snowboard",
       funFact: "Unlike most sports, snowboarding jumped straight to the Olympics in Nagano 1998 with Giant Slalom and Halfpipe, skipping the usual demonstration stage!",
       words: [
-        { word: "CORK", hint: "Off-axis spinning trick", revealedIndex: 2 },
-        { word: "COURSE", hint: "Path down the mountain with features", revealedIndex: 3 },
-        { word: "SWITCH", hint: "Riding backwards from your normal stance", revealedIndex: 4 },
-        { word: "MCTWIST", hint: "Inverted 540 spin trick", revealedIndex: 3 },
-        { word: "HALFPIPE", hint: "U-shaped snow channel for tricks", revealedIndex: 5 },
+        { word: "CORK", hint: "Off-axis spinning trick", letters: ['C', 'O', 'R', 'K', 'S', 'E'], revealedIndex: 2 },
+        { word: "COURSE", hint: "Path down the mountain with features", letters: ['C', 'O', 'U', 'R', 'S', 'E', 'T', 'N'], revealedIndex: 3 },
+        { word: "SWITCH", hint: "Riding backwards from your normal stance", letters: ['S', 'W', 'I', 'T', 'C', 'H', 'E', 'R'], revealedIndex: 4 },
+        { word: "MCTWIST", hint: "Inverted 540 spin trick", letters: ['M', 'C', 'T', 'W', 'I', 'S', 'T', 'E', 'R'], revealedIndex: 3 },
+        { word: "HALFPIPE", hint: "U-shaped snow channel for tricks", letters: ['H', 'A', 'L', 'F', 'P', 'I', 'P', 'E', 'S', 'R'], revealedIndex: 5 },
       ],
     },
     {
@@ -327,11 +327,11 @@ export default function LetterGriddleCottage() {
       category: "Closing Ceremony",
       funFact: "Closing ceremonies feature the symbolic handover to the next host city. In Vancouver 2010, Canada playfully 'fixed' a cauldron malfunction from the opening ceremony!",
       words: [
-        { word: "HOST", hint: "Country or city putting on the Games", revealedIndex: 2 },
-        { word: "VENUE", hint: "Location where events take place", revealedIndex: 3 },
-        { word: "ANTHEM", hint: "National song played for winners", revealedIndex: 3 },
-        { word: "PARADE", hint: "Athletes walking together in celebration", revealedIndex: 4 },
-        { word: "VICTORY", hint: "Winning and success", revealedIndex: 4 },
+        { word: "HOST", hint: "Country or city putting on the Games", letters: ['H', 'O', 'S', 'T', 'E', 'R'], revealedIndex: 2 },
+        { word: "VENUE", hint: "Location where events take place", letters: ['V', 'E', 'N', 'U', 'E', 'S', 'R'], revealedIndex: 3 },
+        { word: "ANTHEM", hint: "National song played for winners", letters: ['A', 'N', 'T', 'H', 'E', 'M', 'S', 'I'], revealedIndex: 3 },
+        { word: "PARADE", hint: "Athletes walking together in celebration", letters: ['P', 'A', 'R', 'A', 'D', 'E', 'S', 'T'], revealedIndex: 4 },
+        { word: "VICTORY", hint: "Winning and success", letters: ['V', 'I', 'C', 'T', 'O', 'R', 'Y', 'S', 'E'], revealedIndex: 4 },
       ],
     },
   ];
@@ -367,13 +367,20 @@ export default function LetterGriddleCottage() {
 
   const initializeAvailable = () => {
     return puzzleData.words.map(w => {
-      const letters = w.word.split('');
+      // Use the letters array which includes decoys
+      const letters = [...w.letters];
       const revealedLetter = w.word[w.revealedIndex];
-      let found = false;
-      return letters.filter(l => {
-        if (l === revealedLetter && !found) { found = true; return false; }
-        return true;
-      });
+      // Remove ONE instance of the revealed letter from available
+      const revealedIdx = letters.indexOf(revealedLetter);
+      if (revealedIdx !== -1) {
+        letters.splice(revealedIdx, 1);
+      }
+      // Shuffle the letters
+      for (let i = letters.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [letters[i], letters[j]] = [letters[j], letters[i]];
+      }
+      return letters;
     });
   };
 
@@ -416,6 +423,7 @@ export default function LetterGriddleCottage() {
 
   const [todayCompleted, setTodayCompleted] = useState(false);
   const [isReplay, setIsReplay] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(false);
 
   const allComplete = completedWords.every(c => c);
 
@@ -442,6 +450,14 @@ export default function LetterGriddleCottage() {
 
   useEffect(() => {
     setHasMounted(true);
+
+    // Check if first visit - show welcome screen
+    try {
+      const hasVisited = localStorage.getItem('cottageWelcomeSeen');
+      if (!hasVisited) {
+        setShowWelcome(true);
+      }
+    } catch (e) {}
 
     try {
       const saved = localStorage.getItem('cottageStats');
@@ -681,6 +697,9 @@ export default function LetterGriddleCottage() {
   const handleLetterClick = (wordIdx, letter, letterIdx) => {
     if (completedWords[wordIdx]) return;
     setFocusedWordIdx(wordIdx);
+    
+    // Blur to prevent Safari ghost cursor
+    document.activeElement?.blur();
 
     if (selectedSlot?.wordIdx === wordIdx) {
       placeLetter(wordIdx, selectedSlot.slotIdx, letter, letterIdx);
@@ -709,6 +728,10 @@ export default function LetterGriddleCottage() {
 
   const crossOutLetter = (e, wordIdx, letterIdx) => {
     e.stopPropagation();
+    // Blur the button to prevent Safari ghost cursor
+    e.target.blur();
+    document.activeElement?.blur();
+    
     const letter = availableLetters[wordIdx][letterIdx];
     const newCrossed = [...crossedOut];
     newCrossed[wordIdx] = [...newCrossed[wordIdx], { letter, idx: letterIdx }];
@@ -728,6 +751,9 @@ export default function LetterGriddleCottage() {
     const newCrossed = [...crossedOut];
     newCrossed[wordIdx] = newCrossed[wordIdx].filter((_, i) => i !== crossedIdx);
     setCrossedOut(newCrossed);
+    
+    // Blur to prevent Safari ghost cursor
+    document.activeElement?.blur();
   };
 
   const shuffleWord = (wordIdx) => {
@@ -761,8 +787,12 @@ export default function LetterGriddleCottage() {
     localStorage.removeItem('cottageProgress');
   };
 
-  const handleShare = () => {
-    const text = `❄️ Letter Griddle Cottage
+  const handleShare = async () => {
+    const text = `Free & ad-free!
+Part of the Letter Griddle Games 🥞
+More games: lettergriddle.com
+
+❄️ Letter Griddle Cottage
 ${season.eventTitle}
 ${puzzleData.category}
 
@@ -771,6 +801,21 @@ ${completedWords.filter(c => c).length}/5 words${isReplay ? ' (Replay)' : ''}
 
 Play at lettergriddlecottage.com`;
 
+    // Try native sharing first (works great on mobile!)
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Letter Griddle Cottage',
+          text: text,
+        });
+        return; // Success, don't show copied message
+      } catch (err) {
+        // User cancelled or share failed, fall back to clipboard
+        if (err.name === 'AbortError') return; // User cancelled
+      }
+    }
+    
+    // Fallback to clipboard
     navigator.clipboard.writeText(text).then(() => {
       setShareCopied(true);
       setTimeout(() => setShareCopied(false), 2000);
@@ -789,6 +834,13 @@ Play at lettergriddlecottage.com`;
     if (seasons[key].comingSoon) {
       setShowSeasonInfo(true);
     }
+  };
+
+  const dismissWelcome = () => {
+    setShowWelcome(false);
+    try {
+      localStorage.setItem('cottageWelcomeSeen', 'true');
+    } catch (e) {}
   };
 
   // ============================================
@@ -888,7 +940,34 @@ Play at lettergriddlecottage.com`;
         @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
         @keyframes twinkle { 0%, 100% { opacity: 0.2; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.3); } }
         @keyframes fireFlicker { 0% { transform: scale(1) rotate(-2deg); opacity: 0.9; } 100% { transform: scale(1.1) rotate(2deg); opacity: 1; } }
+        @keyframes bounceIn { 
+          0% { transform: scale(0.3); opacity: 0; }
+          50% { transform: scale(1.05); }
+          70% { transform: scale(0.9); }
+          100% { transform: scale(1); opacity: 1; }
+        }
         .shake { animation: shake 0.4s ease-in-out; }
+        .animate-bounce-in { animation: bounceIn 0.6s ease-out forwards; }
+        /* Comprehensive Safari ghost cursor fixes */
+        *, *::before, *::after {
+          -webkit-tap-highlight-color: transparent !important;
+          -webkit-touch-callout: none !important;
+          -webkit-user-select: none !important;
+          user-select: none !important;
+          caret-color: transparent !important;
+        }
+        button, [role="button"], .cursor-pointer {
+          outline: none !important;
+          -webkit-appearance: none !important;
+        }
+        button:focus, button:active, button:focus-visible {
+          outline: none !important;
+          caret-color: transparent !important;
+        }
+        /* Hide any text cursor completely */
+        input, textarea, [contenteditable] {
+          caret-color: transparent !important;
+        }
       `}</style>
 
       <div className="max-w-2xl mx-auto relative z-10">
@@ -939,7 +1018,7 @@ Play at lettergriddlecottage.com`;
           ))}
         </div>
 
-        {/* 🧪 Testing Mode Puzzle Selector */}
+        {/* 🧪 Testing Mode Puzzle Selector - HIDDEN FOR PRODUCTION
         <div className={`bg-amber-500/20 border border-amber-400/50 rounded-xl p-2 mb-3`}>
           <div className="flex items-center justify-center gap-2">
             <span className={`text-xs ${season.text}`}>🧪 Testing Mode:</span>
@@ -954,6 +1033,7 @@ Play at lettergriddlecottage.com`;
             </button>
           </div>
         </div>
+        */}
 
         {/* Category Banner */}
         <div className={`bg-gradient-to-r ${season.accent} text-white rounded-xl p-2 mb-3 shadow-lg text-center`}>
@@ -976,27 +1056,30 @@ Play at lettergriddlecottage.com`;
           </div>
         )}
 
-        {/* Completion Banner with Fun Fact */}
+        {/* Completion Modal Popup - appears with confetti! */}
         {allComplete && (
-          <div className={`bg-gradient-to-r ${season.cardBg} backdrop-blur rounded-xl p-4 mb-3 text-center border ${season.border} shadow-xl`}>
-            <p className={`text-xl font-bold ${season.text} mb-1`}>❄️ Cottage Complete! ❄️</p>
-            <p className={`${season.textMuted} text-sm mb-2`}>{'🥇'.repeat(5)}</p>
-            <p className={`${season.textMuted} text-sm mb-2`}>5/5 words</p>
-            {isReplay && <p className={`text-xs ${season.textMuted} mb-2`}>(Replay)</p>}
-            
-            {/* Fun Fact */}
-            <div className={`bg-white/10 rounded-lg p-3 mb-3 text-left`}>
-              <p className={`text-xs font-bold ${season.text} mb-1`}>💡 Did you know?</p>
-              <p className={`text-sm ${season.text}`}>{puzzleData.funFact}</p>
-            </div>
-            
-            <div className="flex justify-center gap-2">
-              <button onClick={() => setShowShare(true)} className={`px-4 py-2 rounded-full bg-gradient-to-r ${season.accent} text-white font-semibold text-sm flex items-center gap-1`}>
-                ❄️ Share
-              </button>
-              <button onClick={resetPuzzle} className={`px-4 py-2 rounded-full bg-white/20 ${season.text} font-semibold text-sm`}>
-                🔄 Play Again
-              </button>
+          <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-40 p-4">
+            <div className={`bg-gradient-to-br ${season.cardBg} backdrop-blur rounded-2xl p-6 max-w-md w-full text-center border-2 ${season.border} shadow-2xl transform animate-bounce-in`}>
+              <p className="text-4xl mb-2">🏆</p>
+              <p className={`text-2xl font-bold ${season.text} mb-1`} style={{ fontFamily: 'Georgia, serif' }}>Cottage Complete!</p>
+              <p className={`text-lg ${season.text} mb-2`} style={{ fontFamily: 'Georgia, serif' }}>{puzzleData.category}</p>
+              <p className={`${season.text} text-lg mb-3`}>{'🥇'.repeat(5)}</p>
+              <p className={`${season.textMuted} text-sm mb-4`}>5/5 words{isReplay ? ' (Replay)' : ''}</p>
+              
+              {/* Fun Fact */}
+              <div className={`bg-white/10 rounded-lg p-3 mb-4 text-left`}>
+                <p className={`text-xs font-bold ${season.text} mb-1`}>💡 Did you know?</p>
+                <p className={`text-sm ${season.text}`}>{puzzleData.funFact}</p>
+              </div>
+              
+              <div className="flex justify-center gap-3">
+                <button onClick={() => setShowShare(true)} className={`px-5 py-2.5 rounded-full bg-gradient-to-r ${season.accent} text-white font-semibold text-sm flex items-center gap-2 shadow-lg hover:scale-105 transition-transform`}>
+                  ❄️ Share
+                </button>
+                <button onClick={resetPuzzle} className={`px-5 py-2.5 rounded-full bg-white/20 ${season.text} font-semibold text-sm hover:bg-white/30 transition-colors`}>
+                  🔄 Play Again
+                </button>
+              </div>
             </div>
           </div>
         )}
@@ -1020,7 +1103,7 @@ Play at lettergriddlecottage.com`;
                 key={wordIdx}
                 onClick={() => !isComplete && setFocusedWordIdx(wordIdx)}
                 className={`bg-gradient-to-br ${season.cardBg} backdrop-blur rounded-xl p-2.5 border-2 transition-all cursor-pointer
-                  ${isFocused ? `${season.border} ring-2 ring-white/30` : season.border}
+                  ${isFocused ? `border-sky-400/50 bg-white/5` : `${season.border} border-transparent`}
                   ${isCelebrating ? 'ring-4 ring-emerald-400/50 scale-[1.02]' : ''}
                   ${isComplete ? 'opacity-80' : ''}
                 `}
@@ -1094,20 +1177,25 @@ Play at lettergriddlecottage.com`;
                         return (
                           <div key={idx} className="relative group">
                             <button
+                              onMouseDown={(e) => e.preventDefault()}
                               onClick={(e) => { e.stopPropagation(); handleLetterClick(wordIdx, letter, idx); }}
-                              className={`w-8 h-8 rounded-full text-sm font-bold transition-all shadow-md ${
+                              className={`w-8 h-8 rounded-full text-sm font-bold transition-all shadow-md select-none ${
                                 isSelected
                                   ? `bg-gradient-to-br ${season.letterSelected} text-white scale-110 ring-2 ring-white`
                                   : `bg-gradient-to-br ${season.letterBg} ${season.text} hover:scale-105`
                               }`}
-                              style={{ fontFamily: 'Georgia, serif' }}
+                              style={{ fontFamily: 'Georgia, serif', WebkitUserSelect: 'none' }}
+                              tabIndex={-1}
                             >
                               {letter}
                             </button>
                             <button
+                              onMouseDown={(e) => e.preventDefault()}
                               onClick={(e) => crossOutLetter(e, wordIdx, idx)}
-                              className="absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-bold"
+                              className="absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-bold select-none"
+                              style={{ WebkitUserSelect: 'none', cursor: 'pointer' }}
                               title="Cross out"
+                              tabIndex={-1}
                             >
                               ×
                             </button>
@@ -1141,6 +1229,11 @@ Play at lettergriddlecottage.com`;
         {/* Footer */}
         <div className={`mt-6 text-center text-xs ${season.textMuted}`}>
           <p className="mb-1">❄️ Letter Griddle Cottage • Part of the Letter Griddle Family 🥞</p>
+          <div className="flex justify-center items-center gap-2 flex-wrap mb-2">
+            <a href="https://lettergriddle.com" target="_blank" rel="noopener noreferrer" className="px-3 py-1 rounded-full bg-amber-500 text-white font-semibold hover:bg-amber-600 transition-colors">
+              🥞 Play More Letter Griddle Games
+            </a>
+          </div>
           <div className="flex justify-center items-center gap-2 flex-wrap">
             <span>© {new Date().getFullYear()} Letter Griddle</span>
             <span>|</span>
@@ -1199,8 +1292,12 @@ Play at lettergriddlecottage.com`;
             </div>
             <div className={`space-y-3 ${season.text} text-sm`}>
               <div className="bg-white/10 rounded-lg p-3">
-                <p className="font-bold mb-1">🥞 Welcome to Letter Griddle Cottage!</p>
+                <p className="font-bold mb-1">🏠 Welcome to Letter Griddle Cottage!</p>
                 <p>Unscramble the letters in each word's griddle to solve all 5 words.</p>
+              </div>
+              <div className="bg-amber-500/20 rounded-lg p-3 border border-amber-400/30">
+                <p className="font-bold mb-1">🎯 The Twist: Decoy Letters!</p>
+                <p className="text-xs">Each griddle contains <strong>1-2 extra letters</strong> that don't belong in the word. Part of the challenge is figuring out which letters are decoys!</p>
               </div>
               <div className="bg-white/10 rounded-lg p-3">
                 <p className="font-bold mb-1">❄️ How to Play</p>
@@ -1211,8 +1308,18 @@ Play at lettergriddlecottage.com`;
                   <li>One letter is revealed to help you start</li>
                 </ul>
               </div>
+              <div className="bg-rose-500/20 rounded-lg p-3 border border-rose-400/30">
+                <p className="font-bold mb-1">🚫 Cross Out Decoys</p>
+                <p className="text-xs mb-2">Think you spotted a decoy? Get it out of your way!</p>
+                <ul className="list-disc list-inside space-y-1 text-xs">
+                  <li><strong>Desktop:</strong> Hover over any letter to reveal a red <span className="bg-rose-500 text-white px-1 rounded text-xs">×</span> button — click it to cross out</li>
+                  <li><strong>Mobile:</strong> Long-press a letter, then tap the <span className="bg-rose-500 text-white px-1 rounded text-xs">×</span></li>
+                  <li>Crossed-out letters appear below the griddle</li>
+                  <li>Changed your mind? Tap a crossed-out letter to restore it!</li>
+                </ul>
+              </div>
               <div className="bg-white/10 rounded-lg p-3">
-                <p className="font-bold mb-1">⌨️ Keyboard</p>
+                <p className="font-bold mb-1">⌨️ Keyboard Shortcuts</p>
                 <ul className="list-disc list-inside space-y-1 text-xs">
                   <li>Type letters to place them</li>
                   <li>↑↓ arrows to switch words</li>
@@ -1232,7 +1339,7 @@ Play at lettergriddlecottage.com`;
       {/* Stats */}
       {showStats && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4" onClick={() => setShowStats(false)}>
-          <div className={`bg-gradient-to-br ${season.gradient} rounded-2xl p-5 max-w-md w-full border ${season.border}`} onClick={e => e.stopPropagation()}>
+          <div className={`bg-gradient-to-br ${season.gradient} rounded-2xl p-5 max-w-md w-full border ${season.border} max-h-[90vh] overflow-y-auto`} onClick={e => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-4">
               <h2 className={`text-lg font-bold ${season.text}`}>📊 Your Stats</h2>
               <button onClick={() => setShowStats(false)} className={`${season.text} hover:opacity-70`}><X size={24} /></button>
@@ -1255,6 +1362,44 @@ Play at lettergriddlecottage.com`;
                 <div className={`text-xs ${season.textMuted}`}>Fastest Time</div>
               </div>
             </div>
+            
+            {/* Achievements */}
+            <div className="mt-4 pt-4 border-t border-white/20">
+              <h3 className={`text-sm font-bold ${season.text} mb-3`}>🏆 Achievements</h3>
+              <div className="grid grid-cols-2 gap-2">
+                <div className={`p-2 rounded-lg text-center ${stats.puzzlesCompleted >= 1 ? 'bg-amber-500/30' : 'bg-white/5 opacity-50'}`}>
+                  <div className="text-xl">{stats.puzzlesCompleted >= 1 ? '🎿' : '🔒'}</div>
+                  <div className={`text-xs ${season.text}`}>First Run</div>
+                  <div className={`text-xs ${season.textMuted}`}>Solve 1 puzzle</div>
+                </div>
+                <div className={`p-2 rounded-lg text-center ${stats.puzzlesCompleted >= 5 ? 'bg-amber-500/30' : 'bg-white/5 opacity-50'}`}>
+                  <div className="text-xl">{stats.puzzlesCompleted >= 5 ? '⛷️' : '🔒'}</div>
+                  <div className={`text-xs ${season.text}`}>Ski Patrol</div>
+                  <div className={`text-xs ${season.textMuted}`}>Solve 5 puzzles</div>
+                </div>
+                <div className={`p-2 rounded-lg text-center ${stats.currentStreak >= 3 ? 'bg-amber-500/30' : 'bg-white/5 opacity-50'}`}>
+                  <div className="text-xl">{stats.currentStreak >= 3 ? '🔥' : '🔒'}</div>
+                  <div className={`text-xs ${season.text}`}>On Fire</div>
+                  <div className={`text-xs ${season.textMuted}`}>3-day streak</div>
+                </div>
+                <div className={`p-2 rounded-lg text-center ${stats.currentStreak >= 7 ? 'bg-amber-500/30' : 'bg-white/5 opacity-50'}`}>
+                  <div className="text-xl">{stats.currentStreak >= 7 ? '🏔️' : '🔒'}</div>
+                  <div className={`text-xs ${season.text}`}>Mountain Master</div>
+                  <div className={`text-xs ${season.textMuted}`}>7-day streak</div>
+                </div>
+                <div className={`p-2 rounded-lg text-center ${stats.fastestTime && stats.fastestTime <= 60 ? 'bg-amber-500/30' : 'bg-white/5 opacity-50'}`}>
+                  <div className="text-xl">{stats.fastestTime && stats.fastestTime <= 60 ? '⚡' : '🔒'}</div>
+                  <div className={`text-xs ${season.text}`}>Speed Skater</div>
+                  <div className={`text-xs ${season.textMuted}`}>Under 1 minute</div>
+                </div>
+                <div className={`p-2 rounded-lg text-center ${stats.puzzlesCompleted >= 17 ? 'bg-amber-500/30' : 'bg-white/5 opacity-50'}`}>
+                  <div className="text-xl">{stats.puzzlesCompleted >= 17 ? '🥇' : '🔒'}</div>
+                  <div className={`text-xs ${season.text}`}>Gold Medalist</div>
+                  <div className={`text-xs ${season.textMuted}`}>Complete all 17</div>
+                </div>
+              </div>
+            </div>
+            
             <p className={`mt-4 text-center text-xs ${season.textMuted}`}>Stats saved locally</p>
           </div>
         </div>
@@ -1269,7 +1414,11 @@ Play at lettergriddlecottage.com`;
               <button onClick={() => setShowShare(false)} className={`${season.text} hover:opacity-70`}><X size={24} /></button>
             </div>
             <div className={`bg-black/20 rounded-lg p-4 mb-4 font-mono text-xs ${season.text}`}>
-              <pre className="whitespace-pre-wrap">{`❄️ Letter Griddle Cottage
+              <pre className="whitespace-pre-wrap">{`Free & ad-free!
+Part of the Letter Griddle Games 🥞
+More games: lettergriddle.com
+
+❄️ Letter Griddle Cottage
 ${season.eventTitle}
 ${puzzleData.category}
 
@@ -1279,7 +1428,7 @@ ${completedWords.filter(c => c).length}/5 words${isReplay ? ' (Replay)' : ''}
 Play at lettergriddlecottage.com`}</pre>
             </div>
             <button onClick={handleShare} className={`w-full py-3 rounded-full bg-gradient-to-r ${season.accent} text-white font-bold`}>
-              {shareCopied ? '✓ Copied!' : '❄️ Copy to Clipboard'}
+              {shareCopied ? '✓ Copied!' : '❄️ Share Results'}
             </button>
           </div>
         </div>
@@ -1376,6 +1525,83 @@ Play at lettergriddlecottage.com`}</pre>
                 </div>
               )}
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Welcome Screen - First Visit */}
+      {showWelcome && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className={`bg-gradient-to-br ${season.gradient} rounded-2xl p-6 max-w-md w-full border-2 ${season.border} shadow-2xl max-h-[90vh] overflow-y-auto`}>
+            {/* Header */}
+            <div className="text-center mb-4">
+              <p className="text-5xl mb-3">🏠</p>
+              <h1 className={`text-2xl font-bold ${season.text} mb-1`} style={{ fontFamily: 'Georgia, serif' }}>
+                Welcome to Letter Griddle Cottage!
+              </h1>
+              <p className={`${season.textMuted} text-sm`}>A cozy seasonal retreat with a twist...</p>
+            </div>
+
+            {/* The Twist - Highlighted */}
+            <div className="bg-amber-500/25 border-2 border-amber-400/50 rounded-xl p-4 mb-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-2xl">🎯</span>
+                <h2 className={`text-lg font-bold ${season.text}`}>The Cottage Twist!</h2>
+              </div>
+              <p className={`${season.text} text-sm`}>
+                Each word's griddle contains <strong>1-2 decoy letters</strong> that don't belong. 
+                Your challenge is to figure out which letters are real and which are impostors!
+              </p>
+            </div>
+
+            {/* How to Play */}
+            <div className="bg-white/10 rounded-xl p-4 mb-4">
+              <h3 className={`font-bold ${season.text} mb-3 flex items-center gap-2`}>
+                <span>❄️</span> How to Play
+              </h3>
+              <ul className={`${season.text} text-sm space-y-2`}>
+                <li className="flex items-start gap-2">
+                  <span>1️⃣</span>
+                  <span>Tap a letter from the griddle, then tap an empty slot</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span>2️⃣</span>
+                  <span>One letter is already revealed to help you start</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span>3️⃣</span>
+                  <span>Tap placed letters to remove them</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Cross Out Feature - Highlighted */}
+            <div className="bg-rose-500/20 border border-rose-400/40 rounded-xl p-4 mb-5">
+              <h3 className={`font-bold ${season.text} mb-2 flex items-center gap-2`}>
+                <span>🚫</span> Spot a Decoy?
+              </h3>
+              <p className={`${season.text} text-sm mb-2`}>
+                <strong>Hover</strong> (or long-press on mobile) over any letter to reveal a red 
+                <span className="bg-rose-500 text-white px-1.5 py-0.5 rounded mx-1 text-xs font-bold">×</span> 
+                button. Tap it to cross out suspected decoys!
+              </p>
+              <p className={`${season.textMuted} text-xs`}>
+                Changed your mind? Tap crossed-out letters to restore them.
+              </p>
+            </div>
+
+            {/* Let's Play Button */}
+            <button
+              onClick={dismissWelcome}
+              className={`w-full py-4 rounded-full bg-gradient-to-r ${season.accent} text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform flex items-center justify-center gap-2`}
+            >
+              <span>🎿</span> Let's Play!
+            </button>
+
+            {/* Footer note */}
+            <p className={`text-center ${season.textMuted} text-xs mt-4`}>
+              You can always tap <HelpCircle size={12} className="inline" /> for help
+            </p>
           </div>
         </div>
       )}
