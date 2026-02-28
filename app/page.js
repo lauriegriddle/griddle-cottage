@@ -28,7 +28,12 @@ export default function LetterGriddleCottage() {
       correct: 'from-emerald-400 to-emerald-500',
       wrong: 'from-rose-400 to-rose-500',
       ambient: ['🌸', '🌷', '✨', '🦋', '🌼'],
-      tracks: [],
+      tracks: [
+        { name: 'Spring', file: '/spring.mp3' },
+        { name: 'Holiday', file: '/holiday.mp3' },
+        { name: 'Modern Spring', file: '/modern-spring.mp3' },
+        { name: 'Piano Spring', file: '/piano-spring.mp3' },
+      ],
     },
     summer: {
       name: 'Summer',
@@ -1069,10 +1074,6 @@ Play at lettergriddlecottage.com`;
                 <p className="font-bold mb-1">🏠 Welcome to Letter Griddle Cottage!</p>
                 <p>Unscramble the letters in each word's griddle to solve all 5 words.</p>
               </div>
-              <div className="bg-pink-500/20 rounded-lg p-3 border border-pink-400/30">
-                <p className="font-bold mb-1">🎯 The Twist: Decoy Letters!</p>
-                <p className="text-xs">Each griddle contains <strong>1-2 extra letters</strong> that don't belong in the word. Part of the challenge is figuring out which letters are decoys!</p>
-              </div>
               <div className="bg-white/10 rounded-lg p-3">
                 <p className="font-bold mb-1">🌸 How to Play</p>
                 <ul className="list-disc list-inside space-y-1 text-xs">
@@ -1080,16 +1081,6 @@ Play at lettergriddlecottage.com`;
                   <li>OR click a slot first, then click a letter</li>
                   <li>Click placed letters to remove them</li>
                   <li>One letter is revealed to help you start</li>
-                </ul>
-              </div>
-              <div className="bg-rose-500/20 rounded-lg p-3 border border-rose-400/30">
-                <p className="font-bold mb-1">🚫 Cross Out Decoys</p>
-                <p className="text-xs mb-2">Think you spotted a decoy? Get it out of your way!</p>
-                <ul className="list-disc list-inside space-y-1 text-xs">
-                  <li><strong>Desktop:</strong> Hover over any letter to reveal a red <span className="bg-rose-500 text-white px-1 rounded text-xs">×</span> button — click it to cross out</li>
-                  <li><strong>Mobile:</strong> Long-press a letter, then tap the <span className="bg-rose-500 text-white px-1 rounded text-xs">×</span></li>
-                  <li>Crossed-out letters appear below the griddle</li>
-                  <li>Changed your mind? Tap a crossed-out letter to restore it!</li>
                 </ul>
               </div>
               <div className="bg-white/10 rounded-lg p-3">
@@ -1178,9 +1169,41 @@ Play at lettergriddlecottage.com`}</pre>
               <h2 className={`text-lg font-bold ${season.text}`}>🎵 Cottage Jukebox</h2>
               <button onClick={() => setShowJukebox(false)} className={`${season.text} hover:opacity-70`}><X size={24} /></button>
             </div>
-            <div className={`text-center ${season.textMuted} py-8`}>
-              <p className="text-4xl mb-2">🎵</p>
-              <p>Spring tracks coming soon!</p>
+            <div className="space-y-3">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <button
+                  onClick={() => setMusicEnabled(!musicEnabled)}
+                  className={`px-4 py-2 rounded-full font-semibold ${musicEnabled ? `bg-gradient-to-r ${season.accent} text-white` : `bg-white/20 ${season.text}`}`}
+                >
+                  {musicEnabled ? '🔊 Music On' : '🔇 Music Off'}
+                </button>
+              </div>
+              {season.tracks.length > 0 && (
+                <div className="space-y-2">
+                  {season.tracks.map((track, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => { setCurrentTrack(idx); setMusicEnabled(true); }}
+                      className={`w-full p-3 rounded-lg text-left transition-all ${currentTrack === idx && musicEnabled ? `bg-gradient-to-r ${season.accent} text-white` : `bg-white/10 ${season.text} hover:bg-white/20`}`}
+                    >
+                      <span className="mr-2">{currentTrack === idx && musicEnabled ? '🎵' : '🎶'}</span>
+                      {track.name}
+                    </button>
+                  ))}
+                </div>
+              )}
+              <div className="mt-4">
+                <label className={`text-xs ${season.textMuted} block mb-2`}>Volume</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value={volume}
+                  onChange={(e) => { setVolume(parseFloat(e.target.value)); localStorage.setItem('cottageMusicVolume', e.target.value); }}
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
