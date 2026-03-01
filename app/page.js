@@ -1022,7 +1022,7 @@ Play at lettergriddlecottage.com`;
                 {/* Completion Message */}
                 {isComplete && (
                   <p className={`text-center text-sm ${season.text} mt-2`}>
-                    {['Fresh start! 🌱', 'Blooming brilliance! 🌷', 'Spring forward! 🦋', 'Nature's beauty! 🌼', 'Wonderful! ✨'][wordIdx]}
+                    {['Fresh start! 🌱', 'Blooming brilliance! 🌷', 'Spring forward! 🦋', 'Spring beauty! 🌼', 'Wonderful! ✨'][wordIdx]}
                   </p>
                 )}
 
