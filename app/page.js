@@ -1310,20 +1310,20 @@ Play at lettergriddlecottage.com`}</pre>
           <div className={`bg-gradient-to-br ${season.gradient} rounded-2xl p-6 max-w-md w-full border-2 ${season.border} shadow-2xl max-h-[90vh] overflow-y-auto`}>
             <div className="text-center mb-4">
               <p className="text-5xl mb-3">🏠</p>
-              <h1 className={`text-2xl font-bold ${season.text} mb-1`} style={{ fontFamily: 'Georgia, serif' }}>
+             <h1 className={`text-2xl font-bold ${season.text} mb-1`} style={{ fontFamily: 'Georgia, serif' }}>
                 Welcome to Letter Griddle Cottage!
               </h1>
-              <p className={`${season.textMuted} text-sm`}>A cozy seasonal retreat with a twist...</p>
+              <p className={`${season.textMuted} text-sm`}>A cozy seasonal word puzzle retreat 🌸</p>
             </div>
 
-            <div className="bg-pink-500/25 border-2 border-pink-400/50 rounded-xl p-4 mb-4">
+            <div className="bg-emerald-500/20 border-2 border-emerald-400/50 rounded-xl p-4 mb-4">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-2xl">🎯</span>
-                <h2 className={`text-lg font-bold ${season.text}`}>The Cottage Twist!</h2>
+                <span className="text-2xl">🌷</span>
+                <h2 className={`text-lg font-bold ${season.text}`}>Spring Awakening!</h2>
               </div>
               <p className={`${season.text} text-sm`}>
-                Each word's griddle contains <strong>1-2 decoy letters</strong> that don't belong. 
-                Your challenge is to figure out which letters are real and which are impostors!
+                Unscramble the letters in each word's griddle to solve all 5 words. 
+                Enjoy cozy spring puzzles with fun facts and inspirational quotes!
               </p>
             </div>
 
@@ -1345,20 +1345,6 @@ Play at lettergriddlecottage.com`}</pre>
                   <span>Tap placed letters to remove them</span>
                 </li>
               </ul>
-            </div>
-
-            <div className="bg-rose-500/20 border border-rose-400/40 rounded-xl p-4 mb-5">
-              <h3 className={`font-bold ${season.text} mb-2 flex items-center gap-2`}>
-                <span>🚫</span> Spot a Decoy?
-              </h3>
-              <p className={`${season.text} text-sm mb-2`}>
-                <strong>Hover</strong> (or long-press on mobile) over any letter to reveal a red 
-                <span className="bg-rose-500 text-white px-1.5 py-0.5 rounded mx-1 text-xs font-bold">×</span> 
-                button. Tap it to cross out suspected decoys!
-              </p>
-              <p className={`${season.textMuted} text-xs`}>
-                Changed your mind? Tap crossed-out letters to restore them.
-              </p>
             </div>
 
             <button
