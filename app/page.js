@@ -115,7 +115,6 @@ export default function LetterGriddleCottage() {
   const allPuzzles = [
     {
       puzzleNumber: 1,
-      date: "2026-03-01",
       category: "Spring Cottage",
       funFact: "Spring officially begins with the vernal equinox, when the sun passes the celestial equator, providing nearly equal day and night worldwide.",
       words: [
@@ -128,7 +127,6 @@ export default function LetterGriddleCottage() {
     },
     {
       puzzleNumber: 2,
-      date: "2026-03-02",
       category: "Green",
       funFact: "Green is the most restful color to the human eye, which can distinguish more shades of green than any other hue.",
       words: [
@@ -141,7 +139,6 @@ export default function LetterGriddleCottage() {
     },
     {
       puzzleNumber: 3,
-      date: "2026-03-03",
       category: "Blooms",
       funFact: "Spring flowers, often signaling the end of winter, are full of surprises: tulips were once more valuable than homes in the 17th-century Netherlands, and daffodils are actually poisonous to animals.",
       words: [
@@ -154,7 +151,6 @@ export default function LetterGriddleCottage() {
     },
     {
       puzzleNumber: 4,
-      date: "2026-03-04",
       category: "Spring Equinox",
       funFact: "Spring Equinox signifies the first day of spring, features the sun rising/setting due east/west, and signals 6 months of daylight at the North Pole.",
       words: [
@@ -167,7 +163,6 @@ export default function LetterGriddleCottage() {
     },
     {
       puzzleNumber: 5,
-      date: "2026-03-05",
       category: "Spring Flowers",
       funFact: "Tulips were once a status symbol for the wealthy in the 1600s. In the United Kingdom, it is illegal to pick or sell wild bluebells under the Wildlife and Countryside Act.",
       words: [
@@ -176,6 +171,30 @@ export default function LetterGriddleCottage() {
         { word: "ANNUAL", hint: "A plant that lives for one growing season", letters: ['N', 'A', 'U', 'L', 'N', 'A'], revealedIndex: 3 },
         { word: "VIBRANT", hint: "Bright and full of life and color", letters: ['I', 'R', 'B', 'T', 'V', 'N', 'A'], revealedIndex: 4 },
         { word: "RENEWAL", hint: "The process of making something new again", letters: ['E', 'N', 'W', 'L', 'R', 'A', 'E'], revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 6,
+      category: "Baby Animals",
+      funFact: "A newborn koala joey is about the size of a jelly bean. Giraffe calves can stand and walk within an hour of birth. Guinea pigs can run only three hours after birth.",
+      words: [
+        { word: "JOEY", hint: "A baby kangaroo or koala", letters: ['O', 'J', 'Y', 'E'], revealedIndex: 0 },
+        { word: "OWLET", hint: "A baby owl", letters: ['L', 'W', 'E', 'O', 'T'], revealedIndex: 2 },
+        { word: "CYGNET", hint: "A baby swan", letters: ['G', 'Y', 'N', 'C', 'T', 'E'], revealedIndex: 3 },
+        { word: "GOSLING", hint: "A baby goose", letters: ['O', 'L', 'S', 'G', 'N', 'G', 'I'], revealedIndex: 4 },
+        { word: "DUCKLING", hint: "A baby duck", letters: ['U', 'L', 'C', 'I', 'K', 'D', 'G', 'N'], revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 7,
+      category: "Spring Cleaning",
+      funFact: "The golden rule of housekeeping is: Clean as you go.",
+      words: [
+        { word: "DUST", hint: "Tiny particles to wipe away", letters: ['U', 'D', 'T', 'S'], revealedIndex: 0 },
+        { word: "SHINE", hint: "To make something sparkle", letters: ['H', 'N', 'I', 'S', 'E'], revealedIndex: 2 },
+        { word: "VACUUM", hint: "Machine that sucks up dirt", letters: ['A', 'U', 'C', 'V', 'M', 'U'], revealedIndex: 3 },
+        { word: "LAUNDRY", hint: "Clothes that need washing", letters: ['A', 'N', 'U', 'L', 'R', 'D', 'Y'], revealedIndex: 4 },
+        { word: "CLEANING", hint: "Making things tidy and fresh", letters: ['L', 'A', 'E', 'N', 'I', 'C', 'G', 'N'], revealedIndex: 5 },
       ],
     },
   ];
@@ -1007,36 +1026,13 @@ Play at lettergriddlecottage.com`;
                             >
                               {letter}
                             </button>
-                            <button
-                              onMouseDown={(e) => e.preventDefault()}
-                              onClick={(e) => crossOutLetter(e, wordIdx, idx)}
-                              className="absolute -top-1 -right-1 w-4 h-4 bg-rose-500 text-white text-xs rounded-full opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-bold select-none"
-                              style={{ WebkitUserSelect: 'none', cursor: 'pointer' }}
-                              title="Cross out"
-                              tabIndex={-1}
-                            >
-                              ×
-                            </button>
+                            
                           </div>
                         );
                       })}
                     </div>
 
-                    {/* Crossed Out */}
-                    {crossedOut[wordIdx].length > 0 && (
-                      <div className="mt-2 pt-2 border-t border-white/10 text-center">
-                        <span className={`text-xs ${season.textMuted}`}>Crossed: </span>
-                        {crossedOut[wordIdx].map((item, idx) => (
-                          <button
-                            key={idx}
-                            onClick={(e) => { e.stopPropagation(); restoreLetter(wordIdx, idx); }}
-                            className={`mx-0.5 px-1.5 py-0.5 rounded text-xs line-through opacity-50 hover:opacity-100 ${season.text} bg-white/10`}
-                          >
-                            {item.letter}
-                          </button>
-                        ))}
-                      </div>
-                    )}
+                    
                   </div>
                 )}
               </div>
