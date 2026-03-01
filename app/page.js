@@ -144,7 +144,7 @@ export default function LetterGriddleCottage() {
     {
       puzzleNumber: 3,
       category: "Blooms",
-      funFact: "Spring flowers, often signaling the end of winter, are full of surprises: tulips were once more valuable than homes in the 17th-century Netherlands, and daffodils are actually poisonous to animals.",
+      funFact: "Spring flowers, often signaling the end of winter, are full of surprises: tulips were once more valuable than homes in the 17th-century Netherlands and daffodils are actually poisonous to animals.",
       quote: "Blossom by blossom the spring begins.",
       quoteAuthor: "Algernon Charles Swinburne",
       words: [
@@ -1022,7 +1022,7 @@ Play at lettergriddlecottage.com`;
                 {/* Completion Message */}
                 {isComplete && (
                   <p className={`text-center text-sm ${season.text} mt-2`}>
-                    {['Fresh start! 🌱', 'Blooming brilliance! 🌷', 'Spring forward! 🦋', 'Natures beauty! 🌼', 'Wonderful! ✨'][wordIdx]}
+                    {['Fresh start! 🌱', 'Blooming brilliance! 🌷', 'Spring forward! 🦋', 'Nature's beauty! 🌼', 'Wonderful! ✨'][wordIdx]}
                   </p>
                 )}
 
