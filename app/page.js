@@ -139,6 +139,45 @@ export default function LetterGriddleCottage() {
         { word: "HONEYDEW", hint: "Pale green like the melon", letters: ['N', 'D', 'Y', 'O', 'H', 'W', 'E', 'E'], revealedIndex: 5 },
       ],
     },
+    {
+      puzzleNumber: 3,
+      date: "2026-03-03",
+      category: "Blooms",
+      funFact: "Spring flowers, often signaling the end of winter, are full of surprises: tulips were once more valuable than homes in the 17th-century Netherlands, and daffodils are actually poisonous to animals.",
+      words: [
+        { word: "PICK", hint: "To choose or pluck a flower", letters: ['I', 'P', 'C', 'K'], revealedIndex: 0 },
+        { word: "FIELD", hint: "Open land where wildflowers grow", letters: ['E', 'L', 'I', 'D', 'F'], revealedIndex: 2 },
+        { word: "GARDEN", hint: "A place to grow flowers at home", letters: ['R', 'A', 'G', 'N', 'D', 'E'], revealedIndex: 3 },
+        { word: "BOUQUET", hint: "A bunch of flowers tied together", letters: ['Q', 'O', 'U', 'T', 'B', 'E', 'U'], revealedIndex: 4 },
+        { word: "FRAGRANT", hint: "Having a sweet pleasant smell", letters: ['R', 'G', 'A', 'T', 'N', 'F', 'A', 'R'], revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 4,
+      date: "2026-03-04",
+      category: "Spring Equinox",
+      funFact: "Spring Equinox signifies the first day of spring, features the sun rising/setting due east/west, and signals 6 months of daylight at the North Pole.",
+      words: [
+        { word: "EAST", hint: "Direction where the sun rises", letters: ['A', 'E', 'T', 'S'], revealedIndex: 0 },
+        { word: "WEST", hint: "Direction where the sun sets", letters: ['S', 'E', 'T', 'W'], revealedIndex: 2 },
+        { word: "SUNSET", hint: "When the sun goes down", letters: ['N', 'U', 'T', 'S', 'S', 'E'], revealedIndex: 3 },
+        { word: "SUNRISE", hint: "When the sun comes up", letters: ['N', 'U', 'R', 'S', 'E', 'S', 'I'], revealedIndex: 4 },
+        { word: "DAYLIGHT", hint: "The light from the sun during the day", letters: ['A', 'L', 'G', 'Y', 'I', 'D', 'T', 'H'], revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 5,
+      date: "2026-03-05",
+      category: "Spring Flowers",
+      funFact: "Tulips were once a status symbol for the wealthy in the 1600s. In the United Kingdom, it is illegal to pick or sell wild bluebells under the Wildlife and Countryside Act.",
+      words: [
+        { word: "BULB", hint: "Underground part that flowers grow from", letters: ['L', 'U', 'B', 'B'], revealedIndex: 0 },
+        { word: "FRESH", hint: "New and recently made or picked", letters: ['R', 'S', 'E', 'F', 'H'], revealedIndex: 2 },
+        { word: "ANNUAL", hint: "A plant that lives for one growing season", letters: ['N', 'A', 'U', 'L', 'N', 'A'], revealedIndex: 3 },
+        { word: "VIBRANT", hint: "Bright and full of life and color", letters: ['I', 'R', 'B', 'T', 'V', 'N', 'A'], revealedIndex: 4 },
+        { word: "RENEWAL", hint: "The process of making something new again", letters: ['E', 'N', 'W', 'L', 'R', 'A', 'E'], revealedIndex: 5 },
+      ],
+    },
   ];
 
   // ============================================
