@@ -117,6 +117,8 @@ export default function LetterGriddleCottage() {
       puzzleNumber: 1,
       category: "Spring Cottage",
       funFact: "Spring officially begins with the vernal equinox, when the sun passes the celestial equator, providing nearly equal day and night worldwide.",
+      quote: "Where flowers bloom so does hope.",
+      quoteAuthor: "Lady Bird Johnson",
       words: [
         { word: "ANEW", hint: "Starting fresh, like nature in spring", letters: ['N', 'W', 'E', 'A'], revealedIndex: 0 },
         { word: "MARCH", hint: "The month spring often begins", letters: ['R', 'A', 'C', 'M', 'H'], revealedIndex: 2 },
@@ -129,6 +131,8 @@ export default function LetterGriddleCottage() {
       puzzleNumber: 2,
       category: "Green",
       funFact: "Green is the most restful color to the human eye, which can distinguish more shades of green than any other hue.",
+      quote: "The earth laughs in flowers.",
+      quoteAuthor: "Ralph Waldo Emerson",
       words: [
         { word: "LIME", hint: "Bright yellowish-green citrus color", letters: ['M', 'I', 'E', 'L'], revealedIndex: 0 },
         { word: "KELLY", hint: "Vivid green named after an Irish surname", letters: ['L', 'E', 'K', 'Y', 'L'], revealedIndex: 2 },
@@ -141,6 +145,8 @@ export default function LetterGriddleCottage() {
       puzzleNumber: 3,
       category: "Blooms",
       funFact: "Spring flowers, often signaling the end of winter, are full of surprises: tulips were once more valuable than homes in the 17th-century Netherlands, and daffodils are actually poisonous to animals.",
+      quote: "Blossom by blossom the spring begins.",
+      quoteAuthor: "Algernon Charles Swinburne",
       words: [
         { word: "PICK", hint: "To choose or pluck a flower", letters: ['I', 'P', 'C', 'K'], revealedIndex: 0 },
         { word: "FIELD", hint: "Open land where wildflowers grow", letters: ['E', 'L', 'I', 'D', 'F'], revealedIndex: 2 },
@@ -153,6 +159,8 @@ export default function LetterGriddleCottage() {
       puzzleNumber: 4,
       category: "Spring Equinox",
       funFact: "Spring Equinox signifies the first day of spring, features the sun rising/setting due east/west, and signals 6 months of daylight at the North Pole.",
+      quote: "No winter lasts forever; no spring skips its turn.",
+      quoteAuthor: "Hal Borland",
       words: [
         { word: "EAST", hint: "Direction where the sun rises", letters: ['A', 'E', 'T', 'S'], revealedIndex: 0 },
         { word: "WEST", hint: "Direction where the sun sets", letters: ['S', 'E', 'T', 'W'], revealedIndex: 2 },
@@ -165,6 +173,8 @@ export default function LetterGriddleCottage() {
       puzzleNumber: 5,
       category: "Spring Flowers",
       funFact: "Tulips were once a status symbol for the wealthy in the 1600s. In the United Kingdom, it is illegal to pick or sell wild bluebells under the Wildlife and Countryside Act.",
+      quote: "To plant a garden is to believe in tomorrow.",
+      quoteAuthor: "Audrey Hepburn",
       words: [
         { word: "BULB", hint: "Underground part that flowers grow from", letters: ['L', 'U', 'B', 'B'], revealedIndex: 0 },
         { word: "FRESH", hint: "New and recently made or picked", letters: ['R', 'S', 'E', 'F', 'H'], revealedIndex: 2 },
@@ -177,6 +187,8 @@ export default function LetterGriddleCottage() {
       puzzleNumber: 6,
       category: "Baby Animals",
       funFact: "A newborn koala joey is about the size of a jelly bean. Giraffe calves can stand and walk within an hour of birth. Guinea pigs can run only three hours after birth.",
+      quote: "Spring is nature's way of saying, 'Let's party!'",
+      quoteAuthor: "Robin Williams",
       words: [
         { word: "JOEY", hint: "A baby kangaroo or koala", letters: ['O', 'J', 'Y', 'E'], revealedIndex: 0 },
         { word: "OWLET", hint: "A baby owl", letters: ['L', 'W', 'E', 'O', 'T'], revealedIndex: 2 },
@@ -189,6 +201,8 @@ export default function LetterGriddleCottage() {
       puzzleNumber: 7,
       category: "Spring Cleaning",
       funFact: "The golden rule of housekeeping is: Clean as you go.",
+      quote: "Spring: a lovely reminder of how beautiful change can truly be.",
+      quoteAuthor: "Unknown",
       words: [
         { word: "DUST", hint: "Tiny particles to wipe away", letters: ['U', 'D', 'T', 'S'], revealedIndex: 0 },
         { word: "SHINE", hint: "To make something sparkle", letters: ['H', 'N', 'I', 'S', 'E'], revealedIndex: 2 },
@@ -858,7 +872,7 @@ Play at lettergriddlecottage.com`;
         </div>
 
         {/* Open House Puzzle Selector */}
-        <div className={`bg-pink-500/20 border border-pink-400/50 rounded-xl p-2 mb-3`}>
+       <div className={`bg-white/15 border border-emerald-400/40 rounded-xl p-2 mb-3`}>
           <div className="flex items-center justify-center gap-2">
             <span className={`text-xs ${season.text}`}>🌸 Spring Preview:</span>
             <button onClick={goToPreviousPuzzle} className={`p-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text}`}>
@@ -904,19 +918,32 @@ Play at lettergriddlecottage.com`;
               <p className={`${season.text} text-lg mb-3`}>{'🌷'.repeat(5)}</p>
               <p className={`${season.textMuted} text-sm mb-4`}>5/5 words{isReplay ? ' (Replay)' : ''}</p>
               
-              <div className={`bg-white/10 rounded-lg p-3 mb-4 text-left`}>
-                <p className={`text-xs font-bold ${season.text} mb-1`}>💡 Did you know?</p>
-                <p className={`text-sm ${season.text}`}>{puzzleData.funFact}</p>
-              </div>
+             <div className={`bg-white/10 rounded-lg p-3 mb-4 text-center`}>
+  <p className={`text-lg italic ${season.text} mb-2`}>"{puzzleData.quote}"</p>
+  <p className={`text-sm ${season.textMuted}`}>— {puzzleData.quoteAuthor}</p>
+</div>
+
+<div className={`bg-white/10 rounded-lg p-3 mb-4 text-left`}>
+  <p className={`text-xs font-bold ${season.text} mb-1`}>🌸  Did you know?</p>
+  <p className={`text-sm ${season.text}`}>{puzzleData.funFact}</p>
+</div>
               
-              <div className="flex justify-center gap-3">
-                <button onClick={() => setShowShare(true)} className={`px-5 py-2.5 rounded-full bg-gradient-to-r ${season.accent} text-white font-semibold text-sm flex items-center gap-2 shadow-lg hover:scale-105 transition-transform`}>
-                  🌸 Share
-                </button>
-                <button onClick={resetPuzzle} className={`px-5 py-2.5 rounded-full bg-white/20 ${season.text} font-semibold text-sm hover:bg-white/30 transition-colors`}>
-                  🔄 Play Again
-                </button>
-              </div>
+             <div className="flex justify-center gap-3 flex-wrap">
+  <button onClick={() => setShowShare(true)} className={`px-5 py-2.5 rounded-full bg-gradient-to-r ${season.accent} text-white font-semibold text-sm flex items-center gap-2 shadow-lg hover:scale-105 transition-transform`}>
+    🌸 Share
+  </button>
+  {currentPuzzleIndex < allPuzzles.length - 1 && (
+    <button 
+      onClick={() => { setCurrentPuzzleIndex(currentPuzzleIndex + 1); }} 
+      className={`px-5 py-2.5 rounded-full bg-gradient-to-r from-pink-400 to-rose-500 text-white font-semibold text-sm flex items-center gap-2 shadow-lg hover:scale-105 transition-transform`}
+    >
+      🌷 Next Puzzle
+    </button>
+  )}
+  <button onClick={resetPuzzle} className={`px-5 py-2.5 rounded-full bg-white/20 ${season.text} font-semibold text-sm hover:bg-white/30 transition-colors`}>
+    🔄 Play Again
+  </button>
+</div>
             </div>
           </div>
         )}
@@ -1269,7 +1296,7 @@ Play at lettergriddlecottage.com`}</pre>
                 <div className={`text-center ${season.text}`}>
                   <p className="text-2xl mb-1">🌸</p>
                   <p className="font-bold">Spring is here!</p>
-                  <p className={`text-sm ${season.textMuted}`}>More puzzles coming soon.</p>
+                  <p className={`text-sm ${season.textMuted}`}> Puzzles have fun facts and inspirational quotes.</p>
                 </div>
               )}
             </div>
