@@ -874,7 +874,7 @@ Play at lettergriddlecottage.com`;
         {/* Open House Puzzle Selector */}
        <div className={`bg-white/15 border border-emerald-400/40 rounded-xl p-2 mb-3`}>
           <div className="flex items-center justify-center gap-2">
-            <span className={`text-xs ${season.text}`}>🌸 Spring Preview:</span>
+            <span className={`text-xs ${season.text}`}>🌸 Spring Puzzles:</span>
             <button onClick={goToPreviousPuzzle} className={`p-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text}`}>
               <ChevronLeft size={16} />
             </button>
