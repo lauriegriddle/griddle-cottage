@@ -211,6 +211,62 @@ export default function LetterGriddleCottage() {
         { word: "CLEANING", hint: "Making things tidy and fresh", letters: ['L', 'A', 'E', 'N', 'I', 'C', 'G', 'N'], revealedIndex: 5 },
       ],
     },
+    {
+      puzzleNumber: 8,
+      category: "In Bloom",
+      funFact: "Crocuses are often the first to appear, capable of pushing through snow to signal the end of winter.",
+      quote: "Spring unlocks the flowers to paint the laughing soil.",
+      quoteAuthor: "Bishop Reginald Heber",
+      words: [
+        { word: "LILY", hint: "Elegant flower often seen at Easter", letters: ['I', 'L', 'Y', 'L'], revealedIndex: 0 },
+        { word: "LILAC", hint: "Fragrant purple spring shrub", letters: ['I', 'A', 'L', 'L', 'C'], revealedIndex: 2 },
+        { word: "LUPINE", hint: "Tall spiky wildflower in many colors", letters: ['U', 'I', 'P', 'L', 'E', 'N'], revealedIndex: 3 },
+        { word: "PETUNIA", hint: "Popular trumpet-shaped garden flower", letters: ['E', 'U', 'T', 'P', 'I', 'A', 'N'], revealedIndex: 4 },
+        { word: "DAFFODIL", hint: "Cheerful yellow spring trumpet flower", letters: ['A', 'F', 'O', 'D', 'I', 'F', 'L', 'D'], revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 9,
+      category: "St. Patrick's Day",
+      funFact: "St. Patrick's Day actually originated with the color blue, not green, and the saint himself was born in Britain, not Ireland. Furthermore, the first parade took place in Florida in 1601, not Ireland, and the holiday's popular corned beef dish is an Irish-American tradition rather than an authentic Irish meal.",
+      quote: "April hath put a spirit of youth in everything.",
+      quoteAuthor: "William Shakespeare",
+      words: [
+        { word: "LUCK", hint: "Good fortune, often associated with the Irish", letters: ['U', 'L', 'K', 'C'], revealedIndex: 0 },
+        { word: "CHARM", hint: "A lucky object or trinket", letters: ['H', 'R', 'A', 'C', 'M'], revealedIndex: 2 },
+        { word: "CLOVER", hint: "Plant with three or four leaves", letters: ['L', 'V', 'O', 'C', 'R', 'E'], revealedIndex: 3 },
+        { word: "IRELAND", hint: "The Emerald Isle", letters: ['R', 'L', 'E', 'I', 'N', 'A', 'D'], revealedIndex: 4 },
+        { word: "LEPRECHAUN", hint: "Tiny mythical Irish fairy shoemaker", letters: ['E', 'R', 'P', 'C', 'H', 'L', 'A', 'U', 'N', 'E'], revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 10,
+      category: "Spring Ahead",
+      funFact: "Daylight Saving Time (DST) is not meant for farmers, it is properly named \"Daylight Saving Time\" (singular), and it was first implemented by Germany in 1916 to conserve coal during WWI. While often credited to Benjamin Franklin, he only jokingly suggested changing sleep schedules, not the clocks.",
+      quote: "Here comes the sun.",
+      quoteAuthor: "The Beatles",
+      words: [
+        { word: "TIME", hint: "What we measure with a clock", letters: ['I', 'T', 'E', 'M'], revealedIndex: 0 },
+        { word: "CLOCK", hint: "Device that tells the hour", letters: ['L', 'C', 'O', 'C', 'K'], revealedIndex: 2 },
+        { word: "CHANGE", hint: "To make different or adjust", letters: ['H', 'N', 'A', 'C', 'G', 'E'], revealedIndex: 3 },
+        { word: "GERMANY", hint: "Country that first used DST in 1916", letters: ['E', 'M', 'R', 'G', 'N', 'A', 'Y'], revealedIndex: 4 },
+        { word: "DAYLIGHT", hint: "The sunlit hours we're saving", letters: ['A', 'L', 'Y', 'I', 'G', 'D', 'T', 'H'], revealedIndex: 5 },
+      ],
+    },
+    {
+      puzzleNumber: 11,
+      category: "Greenhouse",
+      funFact: "Greenhouses create controlled, warm environments for plants by trapping solar radiation, a concept dating back to Roman times when they used mica to grow cucumbers for Emperor Tiberius. Modern greenhouses conserve water, boost food security, and can even feature self-watering, automated systems for year-round growing.",
+      quote: "If we had no winter, the spring would not be so pleasant.",
+      quoteAuthor: "Anne Bradstreet",
+      words: [
+        { word: "GROW", hint: "What plants do in spring", letters: ['R', 'G', 'W', 'O'], revealedIndex: 0 },
+        { word: "SOLAR", hint: "Related to the sun's energy", letters: ['O', 'A', 'L', 'S', 'R'], revealedIndex: 2 },
+        { word: "WARMTH", hint: "Cozy heat that plants love", letters: ['A', 'M', 'R', 'W', 'T', 'H'], revealedIndex: 3 },
+        { word: "PLANTER", hint: "Container for growing flowers", letters: ['L', 'N', 'A', 'P', 'T', 'R', 'E'], revealedIndex: 4 },
+        { word: "HOTHOUSE", hint: "Another name for a heated greenhouse", letters: ['O', 'H', 'T', 'U', 'O', 'H', 'E', 'S'], revealedIndex: 5 },
+      ],
+    },
   ];
 
   // ============================================
@@ -874,7 +930,7 @@ Play at lettergriddlecottage.com`;
         {/* Open House Puzzle Selector */}
        <div className={`bg-white/15 border border-emerald-400/40 rounded-xl p-2 mb-3`}>
           <div className="flex items-center justify-center gap-2">
-            <span className={`text-xs ${season.text}`}>🌸 Spring Puzzles:</span>
+            <span className={`text-xs ${season.text}`}>🌸 Spring Puzzle Selector:</span>
             <button onClick={goToPreviousPuzzle} className={`p-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text}`}>
               <ChevronLeft size={16} />
             </button>
