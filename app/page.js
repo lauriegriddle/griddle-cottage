@@ -1026,21 +1026,25 @@ Play at lettergriddlecottage.com`;
         </div>
 
         {/* Open House Puzzle Selector */}
-       <div className={`bg-white/15 border border-emerald-400/40 rounded-xl p-2 mb-3`}>
+       <div className={`bg-white/15 border-2 border-pink-400 rounded-xl p-2 mb-3 animate-pulse`}>
           <div className="flex items-center justify-center gap-2">
             <span className={`text-xs ${season.text}`}>🌸 Spring Puzzle Selector:</span>
             <button onClick={goToPreviousPuzzle} className={`p-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text}`}>
               <ChevronLeft size={16} />
             </button>
-            <button onClick={() => setShowPuzzleSelector(true)} className={`px-3 py-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text} text-xs font-semibold`}>
-              Puzzle {puzzleData.puzzleNumber}/{allPuzzles.length}
-            </button>
+            <button onClick={() => setShowPuzzleSelector(true)} className={`px-3 py-1 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xs font-semibold shadow-md hover:scale-105 transition-transform`}>
+  Puzzle {puzzleData.puzzleNumber}/{allPuzzles.length}
+</button>
             <button onClick={goToNextPuzzle} className={`p-1 rounded-full bg-white/20 hover:bg-white/30 ${season.text}`}>
               <ChevronRight size={16} />
             </button>
           </div>
         </div>
-
+<div className={`bg-gradient-to-r from-pink-500 to-rose-500 text-white text-center rounded-lg p-3 mb-3 shadow-lg animate-pulse`}>
+  <p className="text-base font-bold">
+    🌸 Tap the pink button above to explore all {allPuzzles.length} puzzles! 🌸
+  </p>
+</div>
         {/* Category Banner */}
         <div className={`bg-gradient-to-r ${season.accent} text-white rounded-xl p-2 mb-3 shadow-lg text-center`}>
           <p className="text-xs opacity-80">Puzzle #{puzzleData.puzzleNumber} • {season.eventTitle}</p>
