@@ -1197,7 +1197,7 @@ Play at lettergriddlecottage.com`;
                       {availableLetters[wordIdx].map((letter, idx) => {
                         const isSelected = selectedLetter === letter && selectedWordIdx === wordIdx && selectedLetterIdx === idx;
                         return (
-                          <div key={idx} className="relative group">
+                          <div key={`${idx}-${letter}`} className="relative group" style={{ isolation: 'isolate' }}>
                             <button
                               onMouseDown={(e) => e.preventDefault()}
                               onClick={(e) => { e.stopPropagation(); handleLetterClick(wordIdx, letter, idx); }}
@@ -1206,7 +1206,7 @@ Play at lettergriddlecottage.com`;
                                   ? `bg-gradient-to-br ${season.letterSelected} text-white scale-110 ring-2 ring-white`
                                   : `bg-gradient-to-br ${season.letterBg} ${season.text} hover:scale-105`
                               }`}
-                              style={{ fontFamily: 'Georgia, serif', WebkitUserSelect: 'none' }}
+                              style={{ fontFamily: 'Georgia, serif', WebkitUserSelect: 'none', willChange: 'transform' }}
                               tabIndex={-1}
                             >
                               {letter}
