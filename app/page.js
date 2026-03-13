@@ -208,7 +208,7 @@ export default function LetterGriddleCottage() {
         { word: "SHINE", hint: "To make something sparkle", letters: ['H', 'N', 'I', 'S', 'E'], revealedIndex: 2 },
         { word: "VACUUM", hint: "Machine that sucks up dirt", letters: ['A', 'U', 'C', 'V', 'M', 'U'], revealedIndex: 3 },
         { word: "LAUNDRY", hint: "Clothes that need washing", letters: ['A', 'N', 'U', 'L', 'R', 'D', 'Y'], revealedIndex: 4 },
-        { word: "CLEANING", hint: "Making things tidy and fresh", letters: ['L', 'A', 'E', 'N', 'I', 'C', 'G', 'N'], revealedIndex: 5 },
+        { word: "FRESHENS", hint: "Making things fresh and clean", letters: ['R', 'S', 'E', 'H', 'E', 'F', 'S', 'N'], revealedIndex: 5 },
       ],
     },
     {
