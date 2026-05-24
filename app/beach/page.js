@@ -223,7 +223,7 @@ export default function BeachCottagePage() {
   }
 
   function doCopy() {
-    const text = "I decorated my Beach Cottage! ☀️ Play at lettergriddlecottage.com/beach";
+    const text = `🏖️ Beach Cottage Decorator\n${'🐚'.repeat(earned.length)}\n${earned.length}/9 treasures\nlettergriddlecottage.com/beach\nMore games: lettergriddle.com`;
     navigator.clipboard.writeText(text).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
@@ -232,9 +232,7 @@ export default function BeachCottagePage() {
 
   function doNativeShare() {
     navigator.share({
-      title: "Beach Cottage",
-      text: "I decorated my Beach Cottage! ☀️",
-      url: "https://lettergriddlecottage.com/beach"
+      text: `🏖️ Beach Cottage Decorator\n${'🐚'.repeat(earned.length)}\n${earned.length}/9 treasures\nlettergriddlecottage.com/beach\nMore games: lettergriddle.com`,
     }).catch(() => {});
   }
 
@@ -435,7 +433,7 @@ export default function BeachCottagePage() {
               <button onClick={doClear}   style={{fontFamily:"inherit", fontSize:"0.8rem", padding:"6px 14px", borderRadius:"20px", cursor:"pointer", border:"1px solid #bcaaa4", background:"#fdfcf7", color:"#3e2723"}}>Clear</button>
               <button onClick={doShuffle} style={{fontFamily:"inherit", fontSize:"0.8rem", padding:"6px 14px", borderRadius:"20px", cursor:"pointer", border:"1px solid #bcaaa4", background:"#fdfcf7", color:"#3e2723"}}>Shuffle</button>
               <button onClick={doCheck}   style={{fontFamily:"inherit", fontSize:"0.8rem", padding:"6px 14px", borderRadius:"20px", cursor:"pointer", border:"none", background:"#d84315", color:"#fff", fontWeight:"bold"}}>Place it! 🔨</button>
-              <button onClick={doReset}   style={{fontFamily:"inherit", fontSize:"0.7rem", padding:"4px 10px",  borderRadius:"20px", cursor:"pointer", border:"1px solid #bcaaa4", background:"#fdfcf7", color:"#bcaaa4"}}>Reset</button>
+              <button onClick={doReset}   style={{fontFamily:"inherit", fontSize:"0.85rem", padding:"8px 18px", borderRadius:"20px", cursor:"pointer", border:"none", background:"#d84315", color:"#fff", fontWeight:"bold", boxShadow:"0 2px 6px rgba(0,0,0,0.2)"}}>🔄 Reset Cottage</button>
             </div>
 
             <div style={{textAlign:"center", fontSize:"0.8rem", minHeight:"18px", marginTop:"8px", color:msgOk?"#2e7d32":"#c62828", fontWeight:msgOk?"bold":"normal"}}>
